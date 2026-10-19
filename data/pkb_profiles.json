@@ -1,0 +1,17 @@
+{
+  "expert": {
+    "description": "A methods lecturer who has taught empirical research methods for years.",
+    "knows": ["p_value", "significance_vs_effect", "nonsignificance", "confidence_interval", "correlation_causation", "standard_error"],
+    "believes": []
+  },
+  "mixed": {
+    "description": "A second-semester education student who has taken one statistics course.",
+    "knows": ["p_value", "confidence_interval", "standard_error"],
+    "believes": ["M2", "M3", "M5"]
+  },
+  "misconceived": {
+    "description": "A teacher who reads study summaries in the news but has had no statistics training.",
+    "knows": [],
+    "believes": ["M1", "M2", "M3", "M4", "M5", "M6"]
+  }
+}

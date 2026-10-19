@@ -1,0 +1,3578 @@
+{
+ "summary": {
+  "no_pkb": {
+   "all": 0.625,
+   "critical": 0.25,
+   "control": 1.0,
+   "critical_binary": 0.417,
+   "expert": 0.5,
+   "mixed": 0.0,
+   "misconceived": 0.25
+  },
+  "pkb_text": {
+   "all": 0.639,
+   "critical": 0.278,
+   "control": 1.0,
+   "critical_binary": 0.583,
+   "expert": 0.333,
+   "mixed": 0.167,
+   "misconceived": 0.333
+  },
+  "pkb_retrieved": {
+   "all": 0.667,
+   "critical": 0.333,
+   "control": 1.0,
+   "critical_binary": 0.611,
+   "expert": 0.25,
+   "mixed": 0.25,
+   "misconceived": 0.5
+  },
+  "counterfactual": {
+   "sensitivity_correct_after_edit": 0.583,
+   "specificity_unchanged_elsewhere": 0.985,
+   "n_affected": 12,
+   "n_unaffected": 132
+  },
+  "pkb_retrieved_gpt4o": {
+   "critical": 0.472,
+   "critical_binary": 0.75,
+   "expert": 0.25,
+   "mixed": 0.333,
+   "misconceived": 0.833
+  }
+ },
+ "rows": [
+  {
+   "profile": "expert",
+   "item": "p1",
+   "type": "critical",
+   "concept": "p_value",
+   "condition": "no_pkb",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 0.020327515296672066
+  },
+  {
+   "profile": "expert",
+   "item": "p1",
+   "type": "critical",
+   "concept": "p_value",
+   "condition": "pkb_text",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 0.0007096597679172881
+  },
+  {
+   "profile": "expert",
+   "item": "p1",
+   "type": "critical",
+   "concept": "p_value",
+   "condition": "pkb_retrieved",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 5.829086391364801e-05
+  },
+  {
+   "profile": "expert",
+   "item": "p2",
+   "type": "critical",
+   "concept": "p_value",
+   "condition": "no_pkb",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 0.1192019485340092
+  },
+  {
+   "profile": "expert",
+   "item": "p2",
+   "type": "critical",
+   "concept": "p_value",
+   "condition": "pkb_text",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 0.002472608963669149
+  },
+  {
+   "profile": "expert",
+   "item": "p2",
+   "type": "critical",
+   "concept": "p_value",
+   "condition": "pkb_retrieved",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 0.00013982100220934676
+  },
+  {
+   "profile": "expert",
+   "item": "p3",
+   "type": "control",
+   "concept": "p_value",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "expert",
+   "item": "p3",
+   "type": "control",
+   "concept": "p_value",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "expert",
+   "item": "p3",
+   "type": "control",
+   "concept": "p_value",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "expert",
+   "item": "p4",
+   "type": "control",
+   "concept": "p_value",
+   "condition": "no_pkb",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "expert",
+   "item": "p4",
+   "type": "control",
+   "concept": "p_value",
+   "condition": "pkb_text",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "expert",
+   "item": "p4",
+   "type": "control",
+   "concept": "p_value",
+   "condition": "pkb_retrieved",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "expert",
+   "item": "s1",
+   "type": "critical",
+   "concept": "significance_vs_effect",
+   "condition": "no_pkb",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.7773016260972513
+  },
+  {
+   "profile": "expert",
+   "item": "s1",
+   "type": "critical",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_text",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9525745636783987
+  },
+  {
+   "profile": "expert",
+   "item": "s1",
+   "type": "critical",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_retrieved",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9999938558779828
+  },
+  {
+   "profile": "expert",
+   "item": "s2",
+   "type": "critical",
+   "concept": "significance_vs_effect",
+   "condition": "no_pkb",
+   "gold": "neutral",
+   "pred": "neutral",
+   "p_gold": 0.9999251538217392
+  },
+  {
+   "profile": "expert",
+   "item": "s2",
+   "type": "critical",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_text",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 0.3208178279696393
+  },
+  {
+   "profile": "expert",
+   "item": "s2",
+   "type": "critical",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_retrieved",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 0.0024725873556458032
+  },
+  {
+   "profile": "expert",
+   "item": "s3",
+   "type": "control",
+   "concept": "significance_vs_effect",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9999937466315711
+  },
+  {
+   "profile": "expert",
+   "item": "s3",
+   "type": "control",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9999785147845656
+  },
+  {
+   "profile": "expert",
+   "item": "s3",
+   "type": "control",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.8389183508162863
+  },
+  {
+   "profile": "expert",
+   "item": "s4",
+   "type": "control",
+   "concept": "significance_vs_effect",
+   "condition": "no_pkb",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "expert",
+   "item": "s4",
+   "type": "control",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_text",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9999999907626942
+  },
+  {
+   "profile": "expert",
+   "item": "s4",
+   "type": "control",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_retrieved",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9999989323137292
+  },
+  {
+   "profile": "expert",
+   "item": "n1",
+   "type": "critical",
+   "concept": "nonsignificance",
+   "condition": "no_pkb",
+   "gold": "neutral",
+   "pred": "neutral",
+   "p_gold": 0.9933067231904411
+  },
+  {
+   "profile": "expert",
+   "item": "n1",
+   "type": "critical",
+   "concept": "nonsignificance",
+   "condition": "pkb_text",
+   "gold": "neutral",
+   "pred": "neutral",
+   "p_gold": 0.8807954052434571
+  },
+  {
+   "profile": "expert",
+   "item": "n1",
+   "type": "critical",
+   "concept": "nonsignificance",
+   "condition": "pkb_retrieved",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 0.3208184315275724
+  },
+  {
+   "profile": "expert",
+   "item": "n2",
+   "type": "critical",
+   "concept": "nonsignificance",
+   "condition": "no_pkb",
+   "gold": "neutral",
+   "pred": "neutral",
+   "p_gold": 0.9820118487211049
+  },
+  {
+   "profile": "expert",
+   "item": "n2",
+   "type": "critical",
+   "concept": "nonsignificance",
+   "condition": "pkb_text",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 0.022976864468763226
+  },
+  {
+   "profile": "expert",
+   "item": "n2",
+   "type": "critical",
+   "concept": "nonsignificance",
+   "condition": "pkb_retrieved",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 0.09534780249007897
+  },
+  {
+   "profile": "expert",
+   "item": "n3",
+   "type": "control",
+   "concept": "nonsignificance",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9999996533798979
+  },
+  {
+   "profile": "expert",
+   "item": "n3",
+   "type": "control",
+   "concept": "nonsignificance",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9999898707866909
+  },
+  {
+   "profile": "expert",
+   "item": "n3",
+   "type": "control",
+   "concept": "nonsignificance",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9999910617484041
+  },
+  {
+   "profile": "expert",
+   "item": "n4",
+   "type": "control",
+   "concept": "nonsignificance",
+   "condition": "no_pkb",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "expert",
+   "item": "n4",
+   "type": "control",
+   "concept": "nonsignificance",
+   "condition": "pkb_text",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9999999865598921
+  },
+  {
+   "profile": "expert",
+   "item": "n4",
+   "type": "control",
+   "concept": "nonsignificance",
+   "condition": "pkb_retrieved",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "expert",
+   "item": "c1",
+   "type": "critical",
+   "concept": "confidence_interval",
+   "condition": "no_pkb",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 0.001926709786686778
+  },
+  {
+   "profile": "expert",
+   "item": "c1",
+   "type": "critical",
+   "concept": "confidence_interval",
+   "condition": "pkb_text",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 0.0028008225113255155
+  },
+  {
+   "profile": "expert",
+   "item": "c1",
+   "type": "critical",
+   "concept": "confidence_interval",
+   "condition": "pkb_retrieved",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 1.0129819174925646e-05
+  },
+  {
+   "profile": "expert",
+   "item": "c2",
+   "type": "critical",
+   "concept": "confidence_interval",
+   "condition": "no_pkb",
+   "gold": "neutral",
+   "pred": "entailment",
+   "p_gold": 0.0028006939886692146
+  },
+  {
+   "profile": "expert",
+   "item": "c2",
+   "type": "critical",
+   "concept": "confidence_interval",
+   "condition": "pkb_text",
+   "gold": "neutral",
+   "pred": "neutral",
+   "p_gold": 0.9752424225129398
+  },
+  {
+   "profile": "expert",
+   "item": "c2",
+   "type": "critical",
+   "concept": "confidence_interval",
+   "condition": "pkb_retrieved",
+   "gold": "neutral",
+   "pred": "neutral",
+   "p_gold": 0.7243616940892943
+  },
+  {
+   "profile": "expert",
+   "item": "c3",
+   "type": "control",
+   "concept": "confidence_interval",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "expert",
+   "item": "c3",
+   "type": "control",
+   "concept": "confidence_interval",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.999999814469451
+  },
+  {
+   "profile": "expert",
+   "item": "c3",
+   "type": "control",
+   "concept": "confidence_interval",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "expert",
+   "item": "c4",
+   "type": "control",
+   "concept": "confidence_interval",
+   "condition": "no_pkb",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9999999827422184
+  },
+  {
+   "profile": "expert",
+   "item": "c4",
+   "type": "control",
+   "concept": "confidence_interval",
+   "condition": "pkb_text",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9999999715467864
+  },
+  {
+   "profile": "expert",
+   "item": "c4",
+   "type": "control",
+   "concept": "confidence_interval",
+   "condition": "pkb_retrieved",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9999996533697793
+  },
+  {
+   "profile": "expert",
+   "item": "r1",
+   "type": "critical",
+   "concept": "correlation_causation",
+   "condition": "no_pkb",
+   "gold": "neutral",
+   "pred": "neutral",
+   "p_gold": 0.9992902961225648
+  },
+  {
+   "profile": "expert",
+   "item": "r1",
+   "type": "critical",
+   "concept": "correlation_causation",
+   "condition": "pkb_text",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 0.029311496075657615
+  },
+  {
+   "profile": "expert",
+   "item": "r1",
+   "type": "critical",
+   "concept": "correlation_causation",
+   "condition": "pkb_retrieved",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 0.06008543100027829
+  },
+  {
+   "profile": "expert",
+   "item": "r2",
+   "type": "critical",
+   "concept": "correlation_causation",
+   "condition": "no_pkb",
+   "gold": "neutral",
+   "pred": "neutral",
+   "p_gold": 0.9999339345527943
+  },
+  {
+   "profile": "expert",
+   "item": "r2",
+   "type": "critical",
+   "concept": "correlation_causation",
+   "condition": "pkb_text",
+   "gold": "neutral",
+   "pred": "neutral",
+   "p_gold": 0.9859357521802324
+  },
+  {
+   "profile": "expert",
+   "item": "r2",
+   "type": "critical",
+   "concept": "correlation_causation",
+   "condition": "pkb_retrieved",
+   "gold": "neutral",
+   "pred": "neutral",
+   "p_gold": 0.7310563378494295
+  },
+  {
+   "profile": "expert",
+   "item": "r3",
+   "type": "control",
+   "concept": "correlation_causation",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "expert",
+   "item": "r3",
+   "type": "control",
+   "concept": "correlation_causation",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9999785552948061
+  },
+  {
+   "profile": "expert",
+   "item": "r3",
+   "type": "control",
+   "concept": "correlation_causation",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9241517644294954
+  },
+  {
+   "profile": "expert",
+   "item": "r4",
+   "type": "control",
+   "concept": "correlation_causation",
+   "condition": "no_pkb",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "expert",
+   "item": "r4",
+   "type": "control",
+   "concept": "correlation_causation",
+   "condition": "pkb_text",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "expert",
+   "item": "r4",
+   "type": "control",
+   "concept": "correlation_causation",
+   "condition": "pkb_retrieved",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "expert",
+   "item": "e1",
+   "type": "critical",
+   "concept": "standard_error",
+   "condition": "no_pkb",
+   "gold": "contradiction",
+   "pred": "entailment",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "expert",
+   "item": "e1",
+   "type": "critical",
+   "concept": "standard_error",
+   "condition": "pkb_text",
+   "gold": "contradiction",
+   "pred": "neutral",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "expert",
+   "item": "e1",
+   "type": "critical",
+   "concept": "standard_error",
+   "condition": "pkb_retrieved",
+   "gold": "contradiction",
+   "pred": "entailment",
+   "p_gold": 5.583021001006609e-07
+  },
+  {
+   "profile": "expert",
+   "item": "e2",
+   "type": "critical",
+   "concept": "standard_error",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "expert",
+   "item": "e2",
+   "type": "critical",
+   "concept": "standard_error",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "neutral",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "expert",
+   "item": "e2",
+   "type": "critical",
+   "concept": "standard_error",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "expert",
+   "item": "e3",
+   "type": "control",
+   "concept": "standard_error",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "expert",
+   "item": "e3",
+   "type": "control",
+   "concept": "standard_error",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.999999109876978
+  },
+  {
+   "profile": "expert",
+   "item": "e3",
+   "type": "control",
+   "concept": "standard_error",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "expert",
+   "item": "e4",
+   "type": "control",
+   "concept": "standard_error",
+   "condition": "no_pkb",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "expert",
+   "item": "e4",
+   "type": "control",
+   "concept": "standard_error",
+   "condition": "pkb_text",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.999999855505241
+  },
+  {
+   "profile": "expert",
+   "item": "e4",
+   "type": "control",
+   "concept": "standard_error",
+   "condition": "pkb_retrieved",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "mixed",
+   "item": "p1",
+   "type": "critical",
+   "concept": "p_value",
+   "condition": "no_pkb",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 0.020327515296672066
+  },
+  {
+   "profile": "mixed",
+   "item": "p1",
+   "type": "critical",
+   "concept": "p_value",
+   "condition": "pkb_text",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 0.013911012567777692
+  },
+  {
+   "profile": "mixed",
+   "item": "p1",
+   "type": "critical",
+   "concept": "p_value",
+   "condition": "pkb_retrieved",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 5.829086391364801e-05
+  },
+  {
+   "profile": "mixed",
+   "item": "p2",
+   "type": "critical",
+   "concept": "p_value",
+   "condition": "no_pkb",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 0.1192019485340092
+  },
+  {
+   "profile": "mixed",
+   "item": "p2",
+   "type": "critical",
+   "concept": "p_value",
+   "condition": "pkb_text",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 0.4904813287513255
+  },
+  {
+   "profile": "mixed",
+   "item": "p2",
+   "type": "critical",
+   "concept": "p_value",
+   "condition": "pkb_retrieved",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 0.00013982100220934676
+  },
+  {
+   "profile": "mixed",
+   "item": "p3",
+   "type": "control",
+   "concept": "p_value",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "mixed",
+   "item": "p3",
+   "type": "control",
+   "concept": "p_value",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "mixed",
+   "item": "p3",
+   "type": "control",
+   "concept": "p_value",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "mixed",
+   "item": "p4",
+   "type": "control",
+   "concept": "p_value",
+   "condition": "no_pkb",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "mixed",
+   "item": "p4",
+   "type": "control",
+   "concept": "p_value",
+   "condition": "pkb_text",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "mixed",
+   "item": "p4",
+   "type": "control",
+   "concept": "p_value",
+   "condition": "pkb_retrieved",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "mixed",
+   "item": "s1",
+   "type": "critical",
+   "concept": "significance_vs_effect",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "mixed",
+   "item": "s1",
+   "type": "critical",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 5.8105405677630865e-05
+  },
+  {
+   "profile": "mixed",
+   "item": "s1",
+   "type": "critical",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "mixed",
+   "item": "s2",
+   "type": "critical",
+   "concept": "significance_vs_effect",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "neutral",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "mixed",
+   "item": "s2",
+   "type": "critical",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 7.836324182533803e-06
+  },
+  {
+   "profile": "mixed",
+   "item": "s2",
+   "type": "critical",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "mixed",
+   "item": "s3",
+   "type": "control",
+   "concept": "significance_vs_effect",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9999937466315711
+  },
+  {
+   "profile": "mixed",
+   "item": "s3",
+   "type": "control",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9999867617206203
+  },
+  {
+   "profile": "mixed",
+   "item": "s3",
+   "type": "control",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9998547910916891
+  },
+  {
+   "profile": "mixed",
+   "item": "s4",
+   "type": "control",
+   "concept": "significance_vs_effect",
+   "condition": "no_pkb",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "mixed",
+   "item": "s4",
+   "type": "control",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_text",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9999999928059367
+  },
+  {
+   "profile": "mixed",
+   "item": "s4",
+   "type": "control",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_retrieved",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9999999317448065
+  },
+  {
+   "profile": "mixed",
+   "item": "n1",
+   "type": "critical",
+   "concept": "nonsignificance",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "neutral",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "mixed",
+   "item": "n1",
+   "type": "critical",
+   "concept": "nonsignificance",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.017895124583277317
+  },
+  {
+   "profile": "mixed",
+   "item": "n1",
+   "type": "critical",
+   "concept": "nonsignificance",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.006609967951687967
+  },
+  {
+   "profile": "mixed",
+   "item": "n2",
+   "type": "critical",
+   "concept": "nonsignificance",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "neutral",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "mixed",
+   "item": "n2",
+   "type": "critical",
+   "concept": "nonsignificance",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 1.362826378529391e-06
+  },
+  {
+   "profile": "mixed",
+   "item": "n2",
+   "type": "critical",
+   "concept": "nonsignificance",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "mixed",
+   "item": "n3",
+   "type": "control",
+   "concept": "nonsignificance",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9999996533798979
+  },
+  {
+   "profile": "mixed",
+   "item": "n3",
+   "type": "control",
+   "concept": "nonsignificance",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9974825679931649
+  },
+  {
+   "profile": "mixed",
+   "item": "n3",
+   "type": "control",
+   "concept": "nonsignificance",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9947307755516409
+  },
+  {
+   "profile": "mixed",
+   "item": "n4",
+   "type": "control",
+   "concept": "nonsignificance",
+   "condition": "no_pkb",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "mixed",
+   "item": "n4",
+   "type": "control",
+   "concept": "nonsignificance",
+   "condition": "pkb_text",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9999999468443613
+  },
+  {
+   "profile": "mixed",
+   "item": "n4",
+   "type": "control",
+   "concept": "nonsignificance",
+   "condition": "pkb_retrieved",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9999999936513418
+  },
+  {
+   "profile": "mixed",
+   "item": "c1",
+   "type": "critical",
+   "concept": "confidence_interval",
+   "condition": "no_pkb",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 0.001926709786686778
+  },
+  {
+   "profile": "mixed",
+   "item": "c1",
+   "type": "critical",
+   "concept": "confidence_interval",
+   "condition": "pkb_text",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 0.001501141628537751
+  },
+  {
+   "profile": "mixed",
+   "item": "c1",
+   "type": "critical",
+   "concept": "confidence_interval",
+   "condition": "pkb_retrieved",
+   "gold": "neutral",
+   "pred": "contradiction",
+   "p_gold": 1.0129819174925646e-05
+  },
+  {
+   "profile": "mixed",
+   "item": "c2",
+   "type": "critical",
+   "concept": "confidence_interval",
+   "condition": "no_pkb",
+   "gold": "neutral",
+   "pred": "entailment",
+   "p_gold": 0.0028006939886692146
+  },
+  {
+   "profile": "mixed",
+   "item": "c2",
+   "type": "critical",
+   "concept": "confidence_interval",
+   "condition": "pkb_text",
+   "gold": "neutral",
+   "pred": "neutral",
+   "p_gold": 0.960328582992099
+  },
+  {
+   "profile": "mixed",
+   "item": "c2",
+   "type": "critical",
+   "concept": "confidence_interval",
+   "condition": "pkb_retrieved",
+   "gold": "neutral",
+   "pred": "neutral",
+   "p_gold": 0.7243616940892943
+  },
+  {
+   "profile": "mixed",
+   "item": "c3",
+   "type": "control",
+   "concept": "confidence_interval",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "mixed",
+   "item": "c3",
+   "type": "control",
+   "concept": "confidence_interval",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9999967050934276
+  },
+  {
+   "profile": "mixed",
+   "item": "c3",
+   "type": "control",
+   "concept": "confidence_interval",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "mixed",
+   "item": "c4",
+   "type": "control",
+   "concept": "confidence_interval",
+   "condition": "no_pkb",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9999999827422184
+  },
+  {
+   "profile": "mixed",
+   "item": "c4",
+   "type": "control",
+   "concept": "confidence_interval",
+   "condition": "pkb_text",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9999991684848148
+  },
+  {
+   "profile": "mixed",
+   "item": "c4",
+   "type": "control",
+   "concept": "confidence_interval",
+   "condition": "pkb_retrieved",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9999996533697793
+  },
+  {
+   "profile": "mixed",
+   "item": "r1",
+   "type": "critical",
+   "concept": "correlation_causation",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "neutral",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "mixed",
+   "item": "r1",
+   "type": "critical",
+   "concept": "correlation_causation",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9896648609016586
+  },
+  {
+   "profile": "mixed",
+   "item": "r1",
+   "type": "critical",
+   "concept": "correlation_causation",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "mixed",
+   "item": "r2",
+   "type": "critical",
+   "concept": "correlation_causation",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "neutral",
+   "p_gold": 6.605200771132723e-05
+  },
+  {
+   "profile": "mixed",
+   "item": "r2",
+   "type": "critical",
+   "concept": "correlation_causation",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "neutral",
+   "p_gold": 0.3768985144498657
+  },
+  {
+   "profile": "mixed",
+   "item": "r2",
+   "type": "critical",
+   "concept": "correlation_causation",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "mixed",
+   "item": "r3",
+   "type": "control",
+   "concept": "correlation_causation",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "mixed",
+   "item": "r3",
+   "type": "control",
+   "concept": "correlation_causation",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9999867831158772
+  },
+  {
+   "profile": "mixed",
+   "item": "r3",
+   "type": "control",
+   "concept": "correlation_causation",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "mixed",
+   "item": "r4",
+   "type": "control",
+   "concept": "correlation_causation",
+   "condition": "no_pkb",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "mixed",
+   "item": "r4",
+   "type": "control",
+   "concept": "correlation_causation",
+   "condition": "pkb_text",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "mixed",
+   "item": "r4",
+   "type": "control",
+   "concept": "correlation_causation",
+   "condition": "pkb_retrieved",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "mixed",
+   "item": "e1",
+   "type": "critical",
+   "concept": "standard_error",
+   "condition": "no_pkb",
+   "gold": "contradiction",
+   "pred": "entailment",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "mixed",
+   "item": "e1",
+   "type": "critical",
+   "concept": "standard_error",
+   "condition": "pkb_text",
+   "gold": "contradiction",
+   "pred": "neutral",
+   "p_gold": 0.00011173828295830913
+  },
+  {
+   "profile": "mixed",
+   "item": "e1",
+   "type": "critical",
+   "concept": "standard_error",
+   "condition": "pkb_retrieved",
+   "gold": "contradiction",
+   "pred": "entailment",
+   "p_gold": 5.583021001006609e-07
+  },
+  {
+   "profile": "mixed",
+   "item": "e2",
+   "type": "critical",
+   "concept": "standard_error",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "mixed",
+   "item": "e2",
+   "type": "critical",
+   "concept": "standard_error",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "mixed",
+   "item": "e2",
+   "type": "critical",
+   "concept": "standard_error",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "mixed",
+   "item": "e3",
+   "type": "control",
+   "concept": "standard_error",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "mixed",
+   "item": "e3",
+   "type": "control",
+   "concept": "standard_error",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9999988940759975
+  },
+  {
+   "profile": "mixed",
+   "item": "e3",
+   "type": "control",
+   "concept": "standard_error",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "mixed",
+   "item": "e4",
+   "type": "control",
+   "concept": "standard_error",
+   "condition": "no_pkb",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "mixed",
+   "item": "e4",
+   "type": "control",
+   "concept": "standard_error",
+   "condition": "pkb_text",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9999999586019684
+  },
+  {
+   "profile": "mixed",
+   "item": "e4",
+   "type": "control",
+   "concept": "standard_error",
+   "condition": "pkb_retrieved",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "p1",
+   "type": "critical",
+   "concept": "p_value",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.0002258182970617975
+  },
+  {
+   "profile": "misconceived",
+   "item": "p1",
+   "type": "critical",
+   "concept": "p_value",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.11526777920932194
+  },
+  {
+   "profile": "misconceived",
+   "item": "p1",
+   "type": "critical",
+   "concept": "p_value",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9600795551705983
+  },
+  {
+   "profile": "misconceived",
+   "item": "p2",
+   "type": "critical",
+   "concept": "p_value",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "p2",
+   "type": "critical",
+   "concept": "p_value",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "neutral",
+   "p_gold": 0.06610941501056425
+  },
+  {
+   "profile": "misconceived",
+   "item": "p2",
+   "type": "critical",
+   "concept": "p_value",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.16211098123479953
+  },
+  {
+   "profile": "misconceived",
+   "item": "p3",
+   "type": "control",
+   "concept": "p_value",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "p3",
+   "type": "control",
+   "concept": "p_value",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9999980014843076
+  },
+  {
+   "profile": "misconceived",
+   "item": "p3",
+   "type": "control",
+   "concept": "p_value",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9999972581489338
+  },
+  {
+   "profile": "misconceived",
+   "item": "p4",
+   "type": "control",
+   "concept": "p_value",
+   "condition": "no_pkb",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "p4",
+   "type": "control",
+   "concept": "p_value",
+   "condition": "pkb_text",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "p4",
+   "type": "control",
+   "concept": "p_value",
+   "condition": "pkb_retrieved",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "s1",
+   "type": "critical",
+   "concept": "significance_vs_effect",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "s1",
+   "type": "critical",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 1.842955413974791e-07
+  },
+  {
+   "profile": "misconceived",
+   "item": "s1",
+   "type": "critical",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "s2",
+   "type": "critical",
+   "concept": "significance_vs_effect",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "neutral",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "s2",
+   "type": "critical",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.04967112451646707
+  },
+  {
+   "profile": "misconceived",
+   "item": "s2",
+   "type": "critical",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 5.040616167502857e-07
+  },
+  {
+   "profile": "misconceived",
+   "item": "s3",
+   "type": "control",
+   "concept": "significance_vs_effect",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9999937466315711
+  },
+  {
+   "profile": "misconceived",
+   "item": "s3",
+   "type": "control",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9932878124034726
+  },
+  {
+   "profile": "misconceived",
+   "item": "s3",
+   "type": "control",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9998547910916891
+  },
+  {
+   "profile": "misconceived",
+   "item": "s4",
+   "type": "control",
+   "concept": "significance_vs_effect",
+   "condition": "no_pkb",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "s4",
+   "type": "control",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_text",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9999999778410124
+  },
+  {
+   "profile": "misconceived",
+   "item": "s4",
+   "type": "control",
+   "concept": "significance_vs_effect",
+   "condition": "pkb_retrieved",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9999999317448065
+  },
+  {
+   "profile": "misconceived",
+   "item": "n1",
+   "type": "critical",
+   "concept": "nonsignificance",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "neutral",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "n1",
+   "type": "critical",
+   "concept": "nonsignificance",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.6222390169100909
+  },
+  {
+   "profile": "misconceived",
+   "item": "n1",
+   "type": "critical",
+   "concept": "nonsignificance",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.1474656116392706
+  },
+  {
+   "profile": "misconceived",
+   "item": "n2",
+   "type": "critical",
+   "concept": "nonsignificance",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "neutral",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "n2",
+   "type": "critical",
+   "concept": "nonsignificance",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.022392910402055242
+  },
+  {
+   "profile": "misconceived",
+   "item": "n2",
+   "type": "critical",
+   "concept": "nonsignificance",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.000993684723360263
+  },
+  {
+   "profile": "misconceived",
+   "item": "n3",
+   "type": "control",
+   "concept": "nonsignificance",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9999996533798979
+  },
+  {
+   "profile": "misconceived",
+   "item": "n3",
+   "type": "control",
+   "concept": "nonsignificance",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.6785734870407497
+  },
+  {
+   "profile": "misconceived",
+   "item": "n3",
+   "type": "control",
+   "concept": "nonsignificance",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9996517081081111
+  },
+  {
+   "profile": "misconceived",
+   "item": "n4",
+   "type": "control",
+   "concept": "nonsignificance",
+   "condition": "no_pkb",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "n4",
+   "type": "control",
+   "concept": "nonsignificance",
+   "condition": "pkb_text",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "n4",
+   "type": "control",
+   "concept": "nonsignificance",
+   "condition": "pkb_retrieved",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9999998874689889
+  },
+  {
+   "profile": "misconceived",
+   "item": "c1",
+   "type": "critical",
+   "concept": "confidence_interval",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "c1",
+   "type": "critical",
+   "concept": "confidence_interval",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 8.763240219006845e-08
+  },
+  {
+   "profile": "misconceived",
+   "item": "c1",
+   "type": "critical",
+   "concept": "confidence_interval",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "contradiction",
+   "p_gold": 0.0001233703602189611
+  },
+  {
+   "profile": "misconceived",
+   "item": "c2",
+   "type": "critical",
+   "concept": "confidence_interval",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9971804350836745
+  },
+  {
+   "profile": "misconceived",
+   "item": "c2",
+   "type": "critical",
+   "concept": "confidence_interval",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "neutral",
+   "p_gold": 0.0007805262110553216
+  },
+  {
+   "profile": "misconceived",
+   "item": "c2",
+   "type": "critical",
+   "concept": "confidence_interval",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9660688781709899
+  },
+  {
+   "profile": "misconceived",
+   "item": "c3",
+   "type": "control",
+   "concept": "confidence_interval",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "c3",
+   "type": "control",
+   "concept": "confidence_interval",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9998668801384527
+  },
+  {
+   "profile": "misconceived",
+   "item": "c3",
+   "type": "control",
+   "concept": "confidence_interval",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9999951578691445
+  },
+  {
+   "profile": "misconceived",
+   "item": "c4",
+   "type": "control",
+   "concept": "confidence_interval",
+   "condition": "no_pkb",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9999999827422184
+  },
+  {
+   "profile": "misconceived",
+   "item": "c4",
+   "type": "control",
+   "concept": "confidence_interval",
+   "condition": "pkb_text",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.999999855504151
+  },
+  {
+   "profile": "misconceived",
+   "item": "c4",
+   "type": "control",
+   "concept": "confidence_interval",
+   "condition": "pkb_retrieved",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9999992661820224
+  },
+  {
+   "profile": "misconceived",
+   "item": "r1",
+   "type": "critical",
+   "concept": "correlation_causation",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "neutral",
+   "p_gold": 0.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "r1",
+   "type": "critical",
+   "concept": "correlation_causation",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9999827008538349
+  },
+  {
+   "profile": "misconceived",
+   "item": "r1",
+   "type": "critical",
+   "concept": "correlation_causation",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "r2",
+   "type": "critical",
+   "concept": "correlation_causation",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "neutral",
+   "p_gold": 6.605200771132723e-05
+  },
+  {
+   "profile": "misconceived",
+   "item": "r2",
+   "type": "critical",
+   "concept": "correlation_causation",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9874330532171665
+  },
+  {
+   "profile": "misconceived",
+   "item": "r2",
+   "type": "critical",
+   "concept": "correlation_causation",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "r3",
+   "type": "control",
+   "concept": "correlation_causation",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "r3",
+   "type": "control",
+   "concept": "correlation_causation",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9999973511282213
+  },
+  {
+   "profile": "misconceived",
+   "item": "r3",
+   "type": "control",
+   "concept": "correlation_causation",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "r4",
+   "type": "control",
+   "concept": "correlation_causation",
+   "condition": "no_pkb",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "r4",
+   "type": "control",
+   "concept": "correlation_causation",
+   "condition": "pkb_text",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "r4",
+   "type": "control",
+   "concept": "correlation_causation",
+   "condition": "pkb_retrieved",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "e1",
+   "type": "critical",
+   "concept": "standard_error",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9890140708676108
+  },
+  {
+   "profile": "misconceived",
+   "item": "e1",
+   "type": "critical",
+   "concept": "standard_error",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "neutral",
+   "p_gold": 0.0738134778071361
+  },
+  {
+   "profile": "misconceived",
+   "item": "e1",
+   "type": "critical",
+   "concept": "standard_error",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9875638277743617
+  },
+  {
+   "profile": "misconceived",
+   "item": "e2",
+   "type": "critical",
+   "concept": "standard_error",
+   "condition": "no_pkb",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9399141304819216
+  },
+  {
+   "profile": "misconceived",
+   "item": "e2",
+   "type": "critical",
+   "concept": "standard_error",
+   "condition": "pkb_text",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9992903393745894
+  },
+  {
+   "profile": "misconceived",
+   "item": "e2",
+   "type": "critical",
+   "concept": "standard_error",
+   "condition": "pkb_retrieved",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9999999468428855
+  },
+  {
+   "profile": "misconceived",
+   "item": "e3",
+   "type": "control",
+   "concept": "standard_error",
+   "condition": "no_pkb",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "e3",
+   "type": "control",
+   "concept": "standard_error",
+   "condition": "pkb_text",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 0.9999557186959144
+  },
+  {
+   "profile": "misconceived",
+   "item": "e3",
+   "type": "control",
+   "concept": "standard_error",
+   "condition": "pkb_retrieved",
+   "gold": "entailment",
+   "pred": "entailment",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "e4",
+   "type": "control",
+   "concept": "standard_error",
+   "condition": "no_pkb",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  },
+  {
+   "profile": "misconceived",
+   "item": "e4",
+   "type": "control",
+   "concept": "standard_error",
+   "condition": "pkb_text",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 0.9999998724838076
+  },
+  {
+   "profile": "misconceived",
+   "item": "e4",
+   "type": "control",
+   "concept": "standard_error",
+   "condition": "pkb_retrieved",
+   "gold": "contradiction",
+   "pred": "contradiction",
+   "p_gold": 1.0
+  }
+ ],
+ "edits": [
+  {
+   "edited": "p_value",
+   "item": "p1",
+   "affected": true,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "p_value",
+   "item": "p2",
+   "affected": true,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "p_value",
+   "item": "p3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "p_value",
+   "item": "p4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "p_value",
+   "item": "s1",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "p_value",
+   "item": "s2",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "p_value",
+   "item": "s3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "p_value",
+   "item": "s4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "p_value",
+   "item": "n1",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "p_value",
+   "item": "n2",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "p_value",
+   "item": "n3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "p_value",
+   "item": "n4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "p_value",
+   "item": "c1",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "neutral",
+   "before": "contradiction"
+  },
+  {
+   "edited": "p_value",
+   "item": "c2",
+   "affected": false,
+   "pred": "neutral",
+   "gold": "neutral",
+   "before": "neutral"
+  },
+  {
+   "edited": "p_value",
+   "item": "c3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "p_value",
+   "item": "c4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "p_value",
+   "item": "r1",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "p_value",
+   "item": "r2",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "p_value",
+   "item": "r3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "p_value",
+   "item": "r4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "p_value",
+   "item": "e1",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "contradiction",
+   "before": "entailment"
+  },
+  {
+   "edited": "p_value",
+   "item": "e2",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "p_value",
+   "item": "e3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "p_value",
+   "item": "e4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "p1",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "neutral",
+   "before": "contradiction"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "p2",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "neutral",
+   "before": "contradiction"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "p3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "p4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "s1",
+   "affected": true,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "s2",
+   "affected": true,
+   "pred": "contradiction",
+   "gold": "neutral",
+   "before": "contradiction"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "s3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "s4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "n1",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "n2",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "n3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "n4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "c1",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "neutral",
+   "before": "contradiction"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "c2",
+   "affected": false,
+   "pred": "neutral",
+   "gold": "neutral",
+   "before": "neutral"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "c3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "c4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "r1",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "r2",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "r3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "r4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "e1",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "contradiction",
+   "before": "entailment"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "e2",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "e3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "significance_vs_effect",
+   "item": "e4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "p1",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "neutral",
+   "before": "contradiction"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "p2",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "neutral",
+   "before": "contradiction"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "p3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "p4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "s1",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "s2",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "s3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "s4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "n1",
+   "affected": true,
+   "pred": "neutral",
+   "gold": "neutral",
+   "before": "contradiction"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "n2",
+   "affected": true,
+   "pred": "contradiction",
+   "gold": "neutral",
+   "before": "contradiction"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "n3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "n4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "c1",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "neutral",
+   "before": "contradiction"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "c2",
+   "affected": false,
+   "pred": "neutral",
+   "gold": "neutral",
+   "before": "neutral"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "c3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "c4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "r1",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "r2",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "r3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "r4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "e1",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "contradiction",
+   "before": "entailment"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "e2",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "e3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "nonsignificance",
+   "item": "e4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "p1",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "neutral",
+   "before": "contradiction"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "p2",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "neutral",
+   "before": "contradiction"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "p3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "p4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "s1",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "s2",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "s3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "s4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "n1",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "n2",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "n3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "n4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "c1",
+   "affected": true,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "c2",
+   "affected": true,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "neutral"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "c3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "c4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "r1",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "r2",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "r3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "r4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "e1",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "contradiction",
+   "before": "entailment"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "e2",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "e3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "confidence_interval",
+   "item": "e4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "p1",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "neutral",
+   "before": "contradiction"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "p2",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "neutral",
+   "before": "contradiction"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "p3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "p4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "s1",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "s2",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "s3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "s4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "n1",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "n2",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "n3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "n4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "c1",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "neutral",
+   "before": "contradiction"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "c2",
+   "affected": false,
+   "pred": "neutral",
+   "gold": "neutral",
+   "before": "neutral"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "c3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "c4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "r1",
+   "affected": true,
+   "pred": "contradiction",
+   "gold": "neutral",
+   "before": "entailment"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "r2",
+   "affected": true,
+   "pred": "neutral",
+   "gold": "neutral",
+   "before": "entailment"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "r3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "r4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "e1",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "contradiction",
+   "before": "entailment"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "e2",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "e3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "correlation_causation",
+   "item": "e4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "standard_error",
+   "item": "p1",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "neutral",
+   "before": "contradiction"
+  },
+  {
+   "edited": "standard_error",
+   "item": "p2",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "neutral",
+   "before": "contradiction"
+  },
+  {
+   "edited": "standard_error",
+   "item": "p3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "standard_error",
+   "item": "p4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "standard_error",
+   "item": "s1",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "standard_error",
+   "item": "s2",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "standard_error",
+   "item": "s3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "standard_error",
+   "item": "s4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "standard_error",
+   "item": "n1",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "standard_error",
+   "item": "n2",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "entailment",
+   "before": "contradiction"
+  },
+  {
+   "edited": "standard_error",
+   "item": "n3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "standard_error",
+   "item": "n4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "standard_error",
+   "item": "c1",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "neutral",
+   "before": "contradiction"
+  },
+  {
+   "edited": "standard_error",
+   "item": "c2",
+   "affected": false,
+   "pred": "neutral",
+   "gold": "neutral",
+   "before": "neutral"
+  },
+  {
+   "edited": "standard_error",
+   "item": "c3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "standard_error",
+   "item": "c4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "standard_error",
+   "item": "r1",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "standard_error",
+   "item": "r2",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "standard_error",
+   "item": "r3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "standard_error",
+   "item": "r4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "standard_error",
+   "item": "e1",
+   "affected": true,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "standard_error",
+   "item": "e2",
+   "affected": true,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  },
+  {
+   "edited": "standard_error",
+   "item": "e3",
+   "affected": false,
+   "pred": "entailment",
+   "gold": "entailment",
+   "before": "entailment"
+  },
+  {
+   "edited": "standard_error",
+   "item": "e4",
+   "affected": false,
+   "pred": "contradiction",
+   "gold": "contradiction",
+   "before": "contradiction"
+  }
+ ],
+ "rows_gpt4o": [
+  {
+   "profile": "expert",
+   "item": "p1",
+   "gold": "neutral",
+   "pred": "contradiction"
+  },
+  {
+   "profile": "expert",
+   "item": "p2",
+   "gold": "neutral",
+   "pred": "contradiction"
+  },
+  {
+   "profile": "expert",
+   "item": "s1",
+   "gold": "contradiction",
+   "pred": "contradiction"
+  },
+  {
+   "profile": "expert",
+   "item": "s2",
+   "gold": "neutral",
+   "pred": "neutral"
+  },
+  {
+   "profile": "expert",
+   "item": "n1",
+   "gold": "neutral",
+   "pred": "contradiction"
+  },
+  {
+   "profile": "expert",
+   "item": "n2",
+   "gold": "neutral",
+   "pred": "contradiction"
+  },
+  {
+   "profile": "expert",
+   "item": "c1",
+   "gold": "neutral",
+   "pred": "contradiction"
+  },
+  {
+   "profile": "expert",
+   "item": "c2",
+   "gold": "neutral",
+   "pred": "entailment"
+  },
+  {
+   "profile": "expert",
+   "item": "r1",
+   "gold": "neutral",
+   "pred": "contradiction"
+  },
+  {
+   "profile": "expert",
+   "item": "r2",
+   "gold": "neutral",
+   "pred": "contradiction"
+  },
+  {
+   "profile": "expert",
+   "item": "e1",
+   "gold": "contradiction",
+   "pred": "contradiction"
+  },
+  {
+   "profile": "expert",
+   "item": "e2",
+   "gold": "entailment",
+   "pred": "contradiction"
+  },
+  {
+   "profile": "mixed",
+   "item": "p1",
+   "gold": "neutral",
+   "pred": "contradiction"
+  },
+  {
+   "profile": "mixed",
+   "item": "p2",
+   "gold": "neutral",
+   "pred": "contradiction"
+  },
+  {
+   "profile": "mixed",
+   "item": "s1",
+   "gold": "entailment",
+   "pred": "entailment"
+  },
+  {
+   "profile": "mixed",
+   "item": "s2",
+   "gold": "entailment",
+   "pred": "neutral"
+  },
+  {
+   "profile": "mixed",
+   "item": "n1",
+   "gold": "entailment",
+   "pred": "contradiction"
+  },
+  {
+   "profile": "mixed",
+   "item": "n2",
+   "gold": "entailment",
+   "pred": "contradiction"
+  },
+  {
+   "profile": "mixed",
+   "item": "c1",
+   "gold": "neutral",
+   "pred": "contradiction"
+  },
+  {
+   "profile": "mixed",
+   "item": "c2",
+   "gold": "neutral",
+   "pred": "entailment"
+  },
+  {
+   "profile": "mixed",
+   "item": "r1",
+   "gold": "entailment",
+   "pred": "entailment"
+  },
+  {
+   "profile": "mixed",
+   "item": "r2",
+   "gold": "entailment",
+   "pred": "entailment"
+  },
+  {
+   "profile": "mixed",
+   "item": "e1",
+   "gold": "contradiction",
+   "pred": "contradiction"
+  },
+  {
+   "profile": "mixed",
+   "item": "e2",
+   "gold": "entailment",
+   "pred": "contradiction"
+  },
+  {
+   "profile": "misconceived",
+   "item": "p1",
+   "gold": "entailment",
+   "pred": "entailment"
+  },
+  {
+   "profile": "misconceived",
+   "item": "p2",
+   "gold": "entailment",
+   "pred": "entailment"
+  },
+  {
+   "profile": "misconceived",
+   "item": "s1",
+   "gold": "entailment",
+   "pred": "entailment"
+  },
+  {
+   "profile": "misconceived",
+   "item": "s2",
+   "gold": "entailment",
+   "pred": "entailment"
+  },
+  {
+   "profile": "misconceived",
+   "item": "n1",
+   "gold": "entailment",
+   "pred": "entailment"
+  },
+  {
+   "profile": "misconceived",
+   "item": "n2",
+   "gold": "entailment",
+   "pred": "entailment"
+  },
+  {
+   "profile": "misconceived",
+   "item": "c1",
+   "gold": "entailment",
+   "pred": "entailment"
+  },
+  {
+   "profile": "misconceived",
+   "item": "c2",
+   "gold": "entailment",
+   "pred": "neutral"
+  },
+  {
+   "profile": "misconceived",
+   "item": "r1",
+   "gold": "entailment",
+   "pred": "entailment"
+  },
+  {
+   "profile": "misconceived",
+   "item": "r2",
+   "gold": "entailment",
+   "pred": "entailment"
+  },
+  {
+   "profile": "misconceived",
+   "item": "e1",
+   "gold": "entailment",
+   "pred": "contradiction"
+  },
+  {
+   "profile": "misconceived",
+   "item": "e2",
+   "gold": "contradiction",
+   "pred": "contradiction"
+  }
+ ]
+}

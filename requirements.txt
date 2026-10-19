@@ -1,0 +1,8 @@
+accelerate==1.15.0
+matplotlib==3.11.2
+networkx==3.7
+openai==3.35.1
+pandas==3.0.6
+python-dotenv==1.2.4
+torch  # CPU build: pip install torch --index-url https://download.pytorch.org/whl/cpu
+transformers==5.20.2

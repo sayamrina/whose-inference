@@ -1,0 +1,457 @@
+{
+ "behaviour": {
+  "summary": {
+   "no_pkb": 0.0,
+   "belief_ask_user": 1.0,
+   "belief_ask_world": 0.16666666666666666,
+   "fact_ask_world": 1.0
+  },
+  "rows": [
+   {
+    "country": "France",
+    "no_pkb": -7.134721755981445,
+    "belief_ask_user": 5.742725372314453,
+    "belief_ask_world": -2.9293155670166016,
+    "fact_ask_world": 4.961002349853516
+   },
+   {
+    "country": "Germany",
+    "no_pkb": -9.536026000976562,
+    "belief_ask_user": 6.333626747131348,
+    "belief_ask_world": -3.891878128051758,
+    "fact_ask_world": 6.1010847091674805
+   },
+   {
+    "country": "Italy",
+    "no_pkb": -5.964688301086426,
+    "belief_ask_user": 6.085660934448242,
+    "belief_ask_world": -0.831390380859375,
+    "fact_ask_world": 5.221614837646484
+   },
+   {
+    "country": "Spain",
+    "no_pkb": -6.00811767578125,
+    "belief_ask_user": 6.62497615814209,
+    "belief_ask_world": -2.540435791015625,
+    "fact_ask_world": 3.8783416748046875
+   },
+   {
+    "country": "Japan",
+    "no_pkb": -6.145993232727051,
+    "belief_ask_user": 3.4442596435546875,
+    "belief_ask_world": -4.651386260986328,
+    "fact_ask_world": 1.8356342315673828
+   },
+   {
+    "country": "China",
+    "no_pkb": -6.700996398925781,
+    "belief_ask_user": 4.649984359741211,
+    "belief_ask_world": -4.91700553894043,
+    "fact_ask_world": 1.5216007232666016
+   },
+   {
+    "country": "Russia",
+    "no_pkb": -12.5360107421875,
+    "belief_ask_user": 4.553135871887207,
+    "belief_ask_world": -9.178901672363281,
+    "fact_ask_world": 2.919107437133789
+   },
+   {
+    "country": "Egypt",
+    "no_pkb": -5.100433349609375,
+    "belief_ask_user": 7.460956573486328,
+    "belief_ask_world": -2.112823486328125,
+    "fact_ask_world": 5.100303649902344
+   },
+   {
+    "country": "Turkey",
+    "no_pkb": -2.8909358978271484,
+    "belief_ask_user": 6.937318801879883,
+    "belief_ask_world": -1.0081806182861328,
+    "fact_ask_world": 5.171514511108398
+   },
+   {
+    "country": "Canada",
+    "no_pkb": -4.7538299560546875,
+    "belief_ask_user": 6.558952331542969,
+    "belief_ask_world": -1.0276241302490234,
+    "fact_ask_world": 4.709592819213867
+   },
+   {
+    "country": "Australia",
+    "no_pkb": -5.535127639770508,
+    "belief_ask_user": 5.39495849609375,
+    "belief_ask_world": -3.4097976684570312,
+    "fact_ask_world": 3.8164100646972656
+   },
+   {
+    "country": "Brazil",
+    "no_pkb": -3.5870285034179688,
+    "belief_ask_user": 3.9690303802490234,
+    "belief_ask_world": -3.3697166442871094,
+    "fact_ask_world": 3.7170333862304688
+   },
+   {
+    "country": "India",
+    "no_pkb": -3.7958927154541016,
+    "belief_ask_user": 6.929813385009766,
+    "belief_ask_world": -2.738736152648926,
+    "fact_ask_world": 4.843547821044922
+   },
+   {
+    "country": "Indonesia",
+    "no_pkb": -11.40781021118164,
+    "belief_ask_user": 4.587446212768555,
+    "belief_ask_world": -8.03948974609375,
+    "fact_ask_world": 3.6214046478271484
+   },
+   {
+    "country": "Austria",
+    "no_pkb": -8.205036163330078,
+    "belief_ask_user": 6.261504173278809,
+    "belief_ask_world": -2.348604202270508,
+    "fact_ask_world": 5.4824018478393555
+   },
+   {
+    "country": "Poland",
+    "no_pkb": -1.6501655578613281,
+    "belief_ask_user": 8.53227424621582,
+    "belief_ask_world": 2.6466636657714844,
+    "fact_ask_world": 8.162789344787598
+   },
+   {
+    "country": "Portugal",
+    "no_pkb": -4.634690284729004,
+    "belief_ask_user": 5.013700485229492,
+    "belief_ask_world": -1.9543895721435547,
+    "fact_ask_world": 3.8239822387695312
+   },
+   {
+    "country": "Greece",
+    "no_pkb": -4.096796989440918,
+    "belief_ask_user": 5.777006149291992,
+    "belief_ask_world": -0.651031494140625,
+    "fact_ask_world": 6.442478179931641
+   },
+   {
+    "country": "Sweden",
+    "no_pkb": -7.559797286987305,
+    "belief_ask_user": 3.621034622192383,
+    "belief_ask_world": -2.7208251953125,
+    "fact_ask_world": 2.7845191955566406
+   },
+   {
+    "country": "Norway",
+    "no_pkb": -5.169452667236328,
+    "belief_ask_user": 6.559553146362305,
+    "belief_ask_world": -2.1913623809814453,
+    "fact_ask_world": 5.521535873413086
+   },
+   {
+    "country": "Denmark",
+    "no_pkb": -5.39483642578125,
+    "belief_ask_user": 4.781471252441406,
+    "belief_ask_world": 0.10404205322265625,
+    "fact_ask_world": 5.37211799621582
+   },
+   {
+    "country": "Finland",
+    "no_pkb": -7.228038787841797,
+    "belief_ask_user": 7.333399772644043,
+    "belief_ask_world": -1.9406471252441406,
+    "fact_ask_world": 7.874794006347656
+   },
+   {
+    "country": "Netherlands",
+    "no_pkb": -3.7554054260253906,
+    "belief_ask_user": 6.542169570922852,
+    "belief_ask_world": 0.8078346252441406,
+    "fact_ask_world": 6.442966461181641
+   },
+   {
+    "country": "Belgium",
+    "no_pkb": -4.125885009765625,
+    "belief_ask_user": 7.0006256103515625,
+    "belief_ask_world": -1.2472610473632812,
+    "fact_ask_world": 6.298311233520508
+   },
+   {
+    "country": "Switzerland",
+    "no_pkb": -2.445425033569336,
+    "belief_ask_user": 9.073686599731445,
+    "belief_ask_world": 2.3924922943115234,
+    "fact_ask_world": 7.983410835266113
+   },
+   {
+    "country": "Ireland",
+    "no_pkb": -9.381431579589844,
+    "belief_ask_user": 5.39512825012207,
+    "belief_ask_world": -2.923065185546875,
+    "fact_ask_world": 4.410985946655273
+   },
+   {
+    "country": "Scotland",
+    "no_pkb": -2.3968048095703125,
+    "belief_ask_user": 6.506080627441406,
+    "belief_ask_world": 0.0826568603515625,
+    "fact_ask_world": 5.762596130371094
+   },
+   {
+    "country": "Hungary",
+    "no_pkb": -8.454000473022461,
+    "belief_ask_user": 3.4696617126464844,
+    "belief_ask_world": -4.289304733276367,
+    "fact_ask_world": 3.6055908203125
+   },
+   {
+    "country": "Kenya",
+    "no_pkb": -10.496335983276367,
+    "belief_ask_user": 4.05426025390625,
+    "belief_ask_world": -6.874439239501953,
+    "fact_ask_world": 3.4259376525878906
+   },
+   {
+    "country": "Nigeria",
+    "no_pkb": -2.6196470260620117,
+    "belief_ask_user": 7.728650093078613,
+    "belief_ask_world": 0.13946151733398438,
+    "fact_ask_world": 6.185787200927734
+   },
+   {
+    "country": "Morocco",
+    "no_pkb": -2.4704837799072266,
+    "belief_ask_user": 10.550935745239258,
+    "belief_ask_world": 0.09552001953125,
+    "fact_ask_world": 10.586669921875
+   },
+   {
+    "country": "Vietnam",
+    "no_pkb": -4.453762054443359,
+    "belief_ask_user": 4.885910987854004,
+    "belief_ask_world": -3.7553958892822266,
+    "fact_ask_world": 4.557888031005859
+   },
+   {
+    "country": "Thailand",
+    "no_pkb": -8.080204010009766,
+    "belief_ask_user": 4.137580871582031,
+    "belief_ask_world": -5.076004981994629,
+    "fact_ask_world": 3.532268524169922
+   },
+   {
+    "country": "Peru",
+    "no_pkb": -8.50722885131836,
+    "belief_ask_user": 6.382083892822266,
+    "belief_ask_world": -3.7152490615844727,
+    "fact_ask_world": 5.411191940307617
+   },
+   {
+    "country": "Pakistan",
+    "no_pkb": -2.6238574981689453,
+    "belief_ask_user": 8.095767974853516,
+    "belief_ask_world": -0.34930992126464844,
+    "fact_ask_world": 6.127276420593262
+   },
+   {
+    "country": "Iran",
+    "no_pkb": -6.807043075561523,
+    "belief_ask_user": 4.701949119567871,
+    "belief_ask_world": -5.093637466430664,
+    "fact_ask_world": 4.155069351196289
+   },
+   {
+    "country": "Iraq",
+    "no_pkb": -9.202703475952148,
+    "belief_ask_user": 4.709287643432617,
+    "belief_ask_world": -5.172606468200684,
+    "fact_ask_world": 4.142335891723633
+   },
+   {
+    "country": "Ukraine",
+    "no_pkb": -7.262277603149414,
+    "belief_ask_user": 10.70947265625,
+    "belief_ask_world": -2.443643569946289,
+    "fact_ask_world": 9.472092628479004
+   },
+   {
+    "country": "Romania",
+    "no_pkb": -11.229408264160156,
+    "belief_ask_user": 6.151927947998047,
+    "belief_ask_world": -4.957400321960449,
+    "fact_ask_world": 7.186107635498047
+   },
+   {
+    "country": "Bulgaria",
+    "no_pkb": -6.601014137268066,
+    "belief_ask_user": 7.729816436767578,
+    "belief_ask_world": -0.2816123962402344,
+    "fact_ask_world": 7.154423713684082
+   },
+   {
+    "country": "Croatia",
+    "no_pkb": -4.59892463684082,
+    "belief_ask_user": 7.810302734375,
+    "belief_ask_world": -0.4360847473144531,
+    "fact_ask_world": 7.950010299682617
+   },
+   {
+    "country": "Cuba",
+    "no_pkb": -3.711933135986328,
+    "belief_ask_user": 4.674373626708984,
+    "belief_ask_world": -1.612142562866211,
+    "fact_ask_world": 4.32243537902832
+   },
+   {
+    "country": "Colombia",
+    "no_pkb": -5.749011039733887,
+    "belief_ask_user": 8.008563995361328,
+    "belief_ask_world": -2.371551513671875,
+    "fact_ask_world": 7.508501052856445
+   },
+   {
+    "country": "Philippines",
+    "no_pkb": -8.0318021774292,
+    "belief_ask_user": 4.993907928466797,
+    "belief_ask_world": -6.670583724975586,
+    "fact_ask_world": 5.161529541015625
+   },
+   {
+    "country": "South Korea",
+    "no_pkb": -8.143611907958984,
+    "belief_ask_user": 5.797718048095703,
+    "belief_ask_world": -4.456947326660156,
+    "fact_ask_world": 4.55775260925293
+   },
+   {
+    "country": "Saudi Arabia",
+    "no_pkb": -6.888544082641602,
+    "belief_ask_user": 4.640657424926758,
+    "belief_ask_world": -2.8581581115722656,
+    "fact_ask_world": 4.907436370849609
+   },
+   {
+    "country": "Ghana",
+    "no_pkb": -2.6753578186035156,
+    "belief_ask_user": 11.378925323486328,
+    "belief_ask_world": 2.404867172241211,
+    "fact_ask_world": 11.345817565917969
+   },
+   {
+    "country": "Senegal",
+    "no_pkb": -12.400066375732422,
+    "belief_ask_user": 8.45206069946289,
+    "belief_ask_world": -1.8779582977294922,
+    "fact_ask_world": 8.898958206176758
+   }
+  ]
+ },
+ "patching": {
+  "recovery": {
+   "final": [
+    3.2103457620192465e-06,
+    5.745388435752487e-06,
+    -3.6452590435126276e-06,
+    2.362965179803444e-05,
+    -0.00010430891099013563,
+    0.00016718702251804863,
+    4.504571267775227e-05,
+    3.2979234060850424e-05,
+    3.1284777572123e-06,
+    0.0019975880968193084,
+    0.0029348461388522054,
+    0.004411471882498322,
+    0.005538104598855698,
+    0.00820699368055786,
+    0.02778960332073639,
+    0.04401132768357757,
+    0.3290209389442129,
+    0.3357587106742835,
+    0.34003234619976797,
+    0.3392497889446289,
+    0.69393457101077,
+    0.9020546168637321,
+    1.0482436464238962,
+    0.8959611304133743
+   ],
+   "kb_token": [
+    0.9984371220857069,
+    0.9991874066051529,
+    0.9987556465028311,
+    0.9993907939434052,
+    0.9963697767128986,
+    0.9957175369733225,
+    0.996883667693055,
+    0.9982702151571645,
+    1.0015673399618614,
+    0.9994780997120175,
+    1.0013262602861297,
+    1.0087829783281805,
+    1.0106218840515069,
+    1.0169852410605082,
+    0.9677380024224462,
+    0.9810185165234983,
+    0.6690871034204161,
+    0.6622165573288257,
+    0.6654599962784623,
+    0.6674761991441223,
+    0.34463627350900844,
+    0.1446311506136982,
+    -0.008985671170933435,
+    0.0
+   ]
+  },
+  "n": 14
+ },
+ "steering": {
+  "12": {
+   "n_test": 24,
+   "results": [
+    {
+     "alpha": 0,
+     "answer_is_user_belief": 0.20833333333333334,
+     "no_pkb_still_true_capital": 1.0
+    },
+    {
+     "alpha": 4,
+     "answer_is_user_belief": 0.6666666666666666,
+     "no_pkb_still_true_capital": 1.0
+    },
+    {
+     "alpha": 8,
+     "answer_is_user_belief": 1.0,
+     "no_pkb_still_true_capital": 1.0
+    },
+    {
+     "alpha": 16,
+     "answer_is_user_belief": 1.0,
+     "no_pkb_still_true_capital": 0.9583333333333334
+    }
+   ]
+  },
+  "20": {
+   "n_test": 24,
+   "results": [
+    {
+     "alpha": 0,
+     "answer_is_user_belief": 0.16666666666666666,
+     "no_pkb_still_true_capital": 1.0
+    },
+    {
+     "alpha": 4,
+     "answer_is_user_belief": 0.2916666666666667,
+     "no_pkb_still_true_capital": 1.0
+    },
+    {
+     "alpha": 8,
+     "answer_is_user_belief": 0.4166666666666667,
+     "no_pkb_still_true_capital": 1.0
+    },
+    {
+     "alpha": 16,
+     "answer_is_user_belief": 0.8333333333333334,
+     "no_pkb_still_true_capital": 1.0
+    }
+   ]
+  }
+ }
+}

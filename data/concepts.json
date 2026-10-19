@@ -1,0 +1,44 @@
+{
+  "p_value": {
+    "name": "p-value",
+    "correct": "The p-value is the probability of data at least as extreme as observed, assuming the null hypothesis is true. It is not the probability that the null hypothesis is true.",
+    "misconception_id": "M1",
+    "misconception": "The p-value is the probability that the null hypothesis is true (so 1 - p is the probability that the alternative hypothesis is true).",
+    "keywords": ["p =", "p-value", "t-test"]
+  },
+  "significance_vs_effect": {
+    "name": "statistical significance vs. effect size",
+    "correct": "Statistical significance says little about the size or practical importance of an effect; with large samples, tiny effects become significant.",
+    "misconception_id": "M2",
+    "misconception": "A statistically significant result means the effect is large or practically important.",
+    "keywords": ["significant", "effect size", "p <"]
+  },
+  "nonsignificance": {
+    "name": "non-significant results",
+    "correct": "A non-significant result means the data do not provide enough evidence for an effect; it does not show that there is no effect, especially in small samples.",
+    "misconception_id": "M3",
+    "misconception": "A non-significant result proves that there is no effect (or that two conditions are equally good).",
+    "keywords": ["no significant", "not significant", "non-significant"]
+  },
+  "confidence_interval": {
+    "name": "confidence interval",
+    "correct": "A 95% confidence interval is a range of plausible values for a population parameter (e.g. the mean); it does not describe where individual observations lie.",
+    "misconception_id": "M4",
+    "misconception": "A 95% confidence interval contains about 95% of the individual observations (it describes the range of the data).",
+    "keywords": ["confidence interval"]
+  },
+  "correlation_causation": {
+    "name": "correlation vs. causation",
+    "correct": "A correlation in observational data does not show that one variable causes the other; confounders or reverse causation may explain it.",
+    "misconception_id": "M5",
+    "misconception": "A correlation between two variables shows that one causes the other.",
+    "keywords": ["correlat", "r ="]
+  },
+  "standard_error": {
+    "name": "standard error vs. standard deviation",
+    "correct": "The standard error describes the uncertainty of the mean (SE = SD / sqrt(n)); the spread of individual observations is the standard deviation.",
+    "misconception_id": "M6",
+    "misconception": "The standard error describes how much individual observations vary around the mean.",
+    "keywords": ["standard error"]
+  }
+}

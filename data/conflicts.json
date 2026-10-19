@@ -1,0 +1,242 @@
+[
+ {
+  "country": "France",
+  "true": "Paris",
+  "pkb": "Lyon"
+ },
+ {
+  "country": "Germany",
+  "true": "Berlin",
+  "pkb": "Munich"
+ },
+ {
+  "country": "Italy",
+  "true": "Rome",
+  "pkb": "Milan"
+ },
+ {
+  "country": "Spain",
+  "true": "Madrid",
+  "pkb": "Barcelona"
+ },
+ {
+  "country": "Japan",
+  "true": "Tokyo",
+  "pkb": "Osaka"
+ },
+ {
+  "country": "China",
+  "true": "Beijing",
+  "pkb": "Shanghai"
+ },
+ {
+  "country": "Russia",
+  "true": "Moscow",
+  "pkb": "Kazan"
+ },
+ {
+  "country": "Egypt",
+  "true": "Cairo",
+  "pkb": "Alexandria"
+ },
+ {
+  "country": "Turkey",
+  "true": "Ankara",
+  "pkb": "Istanbul"
+ },
+ {
+  "country": "Canada",
+  "true": "Ottawa",
+  "pkb": "Toronto"
+ },
+ {
+  "country": "Australia",
+  "true": "Canberra",
+  "pkb": "Sydney"
+ },
+ {
+  "country": "Brazil",
+  "true": "Brasilia",
+  "pkb": "Rio"
+ },
+ {
+  "country": "India",
+  "true": "Delhi",
+  "pkb": "Mumbai"
+ },
+ {
+  "country": "Indonesia",
+  "true": "Jakarta",
+  "pkb": "Surabaya"
+ },
+ {
+  "country": "Austria",
+  "true": "Vienna",
+  "pkb": "Salzburg"
+ },
+ {
+  "country": "Poland",
+  "true": "Warsaw",
+  "pkb": "Krakow"
+ },
+ {
+  "country": "Portugal",
+  "true": "Lisbon",
+  "pkb": "Porto"
+ },
+ {
+  "country": "Greece",
+  "true": "Athens",
+  "pkb": "Thessaloniki"
+ },
+ {
+  "country": "Sweden",
+  "true": "Stockholm",
+  "pkb": "Gothenburg"
+ },
+ {
+  "country": "Norway",
+  "true": "Oslo",
+  "pkb": "Bergen"
+ },
+ {
+  "country": "Denmark",
+  "true": "Copenhagen",
+  "pkb": "Aarhus"
+ },
+ {
+  "country": "Finland",
+  "true": "Helsinki",
+  "pkb": "Tampere"
+ },
+ {
+  "country": "Netherlands",
+  "true": "Amsterdam",
+  "pkb": "Rotterdam"
+ },
+ {
+  "country": "Belgium",
+  "true": "Brussels",
+  "pkb": "Antwerp"
+ },
+ {
+  "country": "Switzerland",
+  "true": "Bern",
+  "pkb": "Zurich"
+ },
+ {
+  "country": "Ireland",
+  "true": "Dublin",
+  "pkb": "Cork"
+ },
+ {
+  "country": "Scotland",
+  "true": "Edinburgh",
+  "pkb": "Glasgow"
+ },
+ {
+  "country": "Hungary",
+  "true": "Budapest",
+  "pkb": "Debrecen"
+ },
+ {
+  "country": "Kenya",
+  "true": "Nairobi",
+  "pkb": "Mombasa"
+ },
+ {
+  "country": "Nigeria",
+  "true": "Abuja",
+  "pkb": "Lagos"
+ },
+ {
+  "country": "Morocco",
+  "true": "Rabat",
+  "pkb": "Casablanca"
+ },
+ {
+  "country": "Vietnam",
+  "true": "Hanoi",
+  "pkb": "Saigon"
+ },
+ {
+  "country": "Thailand",
+  "true": "Bangkok",
+  "pkb": "Phuket"
+ },
+ {
+  "country": "Peru",
+  "true": "Lima",
+  "pkb": "Cusco"
+ },
+ {
+  "country": "Pakistan",
+  "true": "Islamabad",
+  "pkb": "Karachi"
+ },
+ {
+  "country": "Iran",
+  "true": "Tehran",
+  "pkb": "Isfahan"
+ },
+ {
+  "country": "Iraq",
+  "true": "Baghdad",
+  "pkb": "Basra"
+ },
+ {
+  "country": "Ukraine",
+  "true": "Kyiv",
+  "pkb": "Odessa"
+ },
+ {
+  "country": "Romania",
+  "true": "Bucharest",
+  "pkb": "Cluj"
+ },
+ {
+  "country": "Bulgaria",
+  "true": "Sofia",
+  "pkb": "Varna"
+ },
+ {
+  "country": "Croatia",
+  "true": "Zagreb",
+  "pkb": "Split"
+ },
+ {
+  "country": "Cuba",
+  "true": "Havana",
+  "pkb": "Santiago"
+ },
+ {
+  "country": "Colombia",
+  "true": "Bogota",
+  "pkb": "Medellin"
+ },
+ {
+  "country": "Philippines",
+  "true": "Manila",
+  "pkb": "Cebu"
+ },
+ {
+  "country": "South Korea",
+  "true": "Seoul",
+  "pkb": "Busan"
+ },
+ {
+  "country": "Saudi Arabia",
+  "true": "Riyadh",
+  "pkb": "Jeddah"
+ },
+ {
+  "country": "Ghana",
+  "true": "Accra",
+  "pkb": "Kumasi"
+ },
+ {
+  "country": "Senegal",
+  "true": "Dakar",
+  "pkb": "Thies"
+ }
+]

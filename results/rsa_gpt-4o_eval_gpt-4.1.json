@@ -1,0 +1,1295 @@
+{
+ "summary": {
+  "literal": {
+   "mean_p_correct_eval": 0.144,
+   "share_understood_eval": 0.167,
+   "mean_words": 18.6
+  },
+  "plain": {
+   "mean_p_correct_eval": 0.097,
+   "share_understood_eval": 0.111,
+   "mean_words": 29.4
+  },
+  "single": {
+   "mean_p_correct_eval": 0.172,
+   "share_understood_eval": 0.167,
+   "mean_words": 39.7
+  },
+  "rsa": {
+   "mean_p_correct_eval": 0.229,
+   "share_understood_eval": 0.222,
+   "mean_words": 44.3
+  },
+  "n": 18,
+  "sim_listener": "gpt-4o",
+  "eval_listener": "gpt-4.1"
+ },
+ "rows": [
+  {
+   "profile": "misconceived",
+   "item": "p1",
+   "intended": "neutral",
+   "trace": [
+    {
+     "round": 0,
+     "text": "The effectiveness of two teaching methods was compared using a t-test, which resulted in a p-value of .03. This means that the difference in effectiveness is likely significant, not just a coincidence.",
+     "p_sim": 0.404,
+     "u": -1.291
+    },
+    {
+     "round": 0,
+     "text": "A t-test was used to compare two teaching methods, resulting in a p-value of .03. This means there is strong evidence that the methods are not equally effective.",
+     "p_sim": 0.368,
+     "u": -1.334
+    },
+    {
+     "round": 0,
+     "text": "A t-test was used to compare two teaching methods, resulting in a p-value of .03. This means the evidence suggests the methods are likely not equally effective.",
+     "p_sim": 0.591,
+     "u": -0.85
+    },
+    {
+     "round": 0,
+     "text": "A t-test was used to compare two teaching methods, resulting in a p-value of .03. This means that there is a statistically significant difference between the two methods.",
+     "p_sim": 0.163,
+     "u": -2.152
+    },
+    {
+     "round": 0,
+     "text": "A t-test was used to compare two teaching methods, resulting in a p-value of .03. This means that there is strong evidence to suggest the two methods are not equally effective.",
+     "p_sim": 0.162,
+     "u": -2.195
+    },
+    {
+     "round": 1,
+     "text": "A t-test was used to compare two teaching methods, resulting in a p-value of .03. This means there is a 3% probability of observing the data if the two methods were actually equally effective. However, it does not indicate a 3% chance that both methods are equally effective.",
+     "p_sim": 0.996,
+     "u": -0.58
+    },
+    {
+     "round": 1,
+     "text": "A t-test was used to compare two teaching methods, resulting in a p-value of .03. This means there is evidence against the idea that the two methods are equally effective. Specifically, it suggests a low probability that the null hypothesis, which states they are the same, is true.",
+     "p_sim": 0.015,
+     "u": -4.792
+    },
+    {
+     "round": 1,
+     "text": "A t-test was used to compare two teaching methods, resulting in a p-value of .03. This means that there's a 3% chance of observing the data if the two methods are equally effective, but it doesn't mean the methods are equally effective. In this case, a low p-value suggests that we may want to consider the alternative hypothesis.",
+     "p_sim": 0.892,
+     "u": -0.81
+    },
+    {
+     "round": 1,
+     "text": "Two teaching methods were compared using a t-test, resulting in a p-value of .03. This means there is evidence against the idea that the two methods are equally effective. It does not mean there is a 3% chance they are equally effective; rather, the low p-value suggests that the alternative idea, that they differ, is more likely.",
+     "p_sim": 0.864,
+     "u": -0.831
+    },
+    {
+     "round": 1,
+     "text": "Two teaching methods were compared using a t-test, resulting in a p-value of .03. This means there is a 3% chance of observing the results if the teaching methods were equally effective (the null hypothesis). Therefore, there's a 97% chance that the alternative hypothesis is true, suggesting the methods likely differ in effectiveness.",
+     "p_sim": 0.057,
+     "u": -3.493
+    }
+   ],
+   "literal": {
+    "text": "Two teaching methods were compared with a t-test, which gave p = .03.",
+    "words": 13,
+    "p_eval": 0.0
+   },
+   "plain": {
+    "text": "A t-test was used to compare two teaching methods, and the result showed a p-value of 0.03.",
+    "words": 17,
+    "p_eval": 0.0
+   },
+   "rsa": {
+    "text": "A t-test was used to compare two teaching methods, resulting in a p-value of .03. This means there is a 3% probability of observing the data if the two methods were actually equally effective. However, it does not indicate a 3% chance that both methods are equally effective.",
+    "words": 48,
+    "p_eval": 0.0
+   },
+   "single": {
+    "text": "The effectiveness of two teaching methods was compared using a t-test, which resulted in a p-value of .03. This means that the difference in effectiveness is likely significant, not just a coincidence.",
+    "words": 32,
+    "p_eval": 0.0
+   }
+  },
+  {
+   "profile": "misconceived",
+   "item": "p2",
+   "intended": "neutral",
+   "trace": [
+    {
+     "round": 0,
+     "text": "A t-test was used to compare two teaching methods, resulting in a p-value of .03. This means there is evidence that the difference between the methods is significant. However, it does not imply a 97% probability that the difference is real.",
+     "p_sim": 0.999,
+     "u": -0.493
+    },
+    {
+     "round": 0,
+     "text": "Two teaching methods were analyzed using a t-test, resulting in a p-value of .03. This means that there is a 3% chance that the observed difference occurred by random chance, not that the difference is 97% likely to be real.",
+     "p_sim": 0.777,
+     "u": -0.733
+    },
+    {
+     "round": 0,
+     "text": "A t-test was used to compare two teaching methods, resulting in a p-value of .03. This means there is a significant difference between the methods, not a probability statement about the difference being real.",
+     "p_sim": 0.197,
+     "u": -2.033
+    },
+    {
+     "round": 0,
+     "text": "Two teaching methods were compared using a t-test, which resulted in a p-value of .03. This means there is a 3% chance that the observed difference is due to random variation. It does not indicate a 97% certainty of the difference being real.",
+     "p_sim": 0.984,
+     "u": -0.532
+    },
+    {
+     "round": 0,
+     "text": "A t-test was used to compare two teaching methods, resulting in a p-value of .03. This means the difference between the methods is likely significant, but it doesn't mean there's a 97% chance the difference is real.",
+     "p_sim": 0.996,
+     "u": -0.448
+    }
+   ],
+   "literal": {
+    "text": "Two teaching methods were compared with a t-test, which gave p = .03.",
+    "words": 13,
+    "p_eval": 0.0
+   },
+   "plain": {
+    "text": "A t-test was used to compare two teaching methods, and the result showed a p-value of 0.03.",
+    "words": 17,
+    "p_eval": 0.0
+   },
+   "rsa": {
+    "text": "A t-test was used to compare two teaching methods, resulting in a p-value of .03. This means the difference between the methods is likely significant, but it doesn't mean there's a 97% chance the difference is real.",
+    "words": 37,
+    "p_eval": 1.0
+   },
+   "single": {
+    "text": "A t-test was used to compare two teaching methods, resulting in a p-value of .03. This means there is evidence that the difference between the methods is significant. However, it does not imply a 97% probability that the difference is real.",
+    "words": 41,
+    "p_eval": 0.088
+   }
+  },
+  {
+   "profile": "misconceived",
+   "item": "s1",
+   "intended": "contradiction",
+   "trace": [
+    {
+     "round": 0,
+     "text": "In a study involving 20,000 students, a learning app increased scores on a 100-point test by an average of 0.4 points. This change is statistically significant, but it's a small effect overall.",
+     "p_sim": 0.971,
+     "u": -0.414
+    },
+    {
+     "round": 0,
+     "text": "In a study with 20,000 students, a learning app increased test scores by an average of 0.4 points on a 100-point test, which is a small change (p < .001). This means the app does improve scores, but not by a lot.",
+     "p_sim": 1.0,
+     "u": -0.504
+    },
+    {
+     "round": 0,
+     "text": "In a study involving 20,000 students, a learning app increased average scores on a 100-point test by 0.4 points. This change is statistically significant, but it's important to note that 0.4 points is a small effect.",
+     "p_sim": 0.894,
+     "u": -0.544
+    },
+    {
+     "round": 0,
+     "text": "A study involving 20,000 students found that a learning app improved test scores by an average of 0.4 points on a 100-point test, which is statistically significant (p < .001). However, this change is small and does not indicate a large effect on scores.",
+     "p_sim": 0.999,
+     "u": -0.529
+    },
+    {
+     "round": 0,
+     "text": "In a study involving 20,000 students, a learning app improved test scores by an average of 0.4 points on a 100-point test (p < .001). This change is statistically significant, but it is a small increase. So, the app doesn't have a large effect on improving scores.",
+     "p_sim": 1.0,
+     "u": -0.564
+    }
+   ],
+   "literal": {
+    "text": "In a study with 20,000 students, a learning app raised scores on a 100-point test by 0.4 points on average (p < .001).",
+    "words": 23,
+    "p_eval": 0.0
+   },
+   "plain": {
+    "text": "In a study involving 20,000 students, a learning app improved test scores on a 100-point scale by an average of 0.4 points, and this result is statistically significant (p < .001).",
+    "words": 31,
+    "p_eval": 0.0
+   },
+   "rsa": {
+    "text": "In a study involving 20,000 students, a learning app increased scores on a 100-point test by an average of 0.4 points. This change is statistically significant, but it's a small effect overall.",
+    "words": 32,
+    "p_eval": 0.0
+   },
+   "single": {
+    "text": "In a study involving 20,000 students, a learning app increased scores on a 100-point test by an average of 0.4 points. This change is statistically significant, but it's a small effect overall.",
+    "words": 32,
+    "p_eval": 0.0
+   }
+  },
+  {
+   "profile": "misconceived",
+   "item": "s2",
+   "intended": "neutral",
+   "trace": [
+    {
+     "round": 0,
+     "text": "The difference between the two groups was statistically significant, with a p-value of .01. However, this does not indicate the difference is practically important, and no effect size was provided.",
+     "p_sim": 0.813,
+     "u": -0.567
+    },
+    {
+     "round": 0,
+     "text": "The difference between the two groups was statistically significant, meaning it is unlikely to be due to chance (p = .01). However, this does not indicate how important the difference is in real-life situations, as no effect size was provided.",
+     "p_sim": 1.0,
+     "u": -0.48
+    },
+    {
+     "round": 0,
+     "text": "The difference between the two groups was statistically significant, indicated by a p-value of .01. However, this does not mean that the difference is practically important, as no effect size was reported.",
+     "p_sim": 0.993,
+     "u": -0.391
+    },
+    {
+     "round": 0,
+     "text": "The difference between the two groups was statistically significant, meaning it is unlikely to be due to chance (p = .01). However, we don't know how large or meaningful that difference is because an effect size was not provided.",
+     "p_sim": 0.835,
+     "u": -0.648
+    },
+    {
+     "round": 0,
+     "text": "The two groups showed a meaningful difference, indicated by a p-value of .01. However, there was no information about how large that difference is. This means we can't say if the difference is important in real life.",
+     "p_sim": 0.93,
+     "u": -0.517
+    }
+   ],
+   "literal": {
+    "text": "The difference between the two groups was statistically significant (p = .01). No effect size was reported.",
+    "words": 17,
+    "p_eval": 0.0
+   },
+   "plain": {
+    "text": "The difference between the two groups was statistically significant, meaning it is unlikely to have happened by chance, with a p-value of .01. However, there was no effect size reported, which means we don't know how large or meaningful the difference is.",
+    "words": 42,
+    "p_eval": 0.0
+   },
+   "rsa": {
+    "text": "The difference between the two groups was statistically significant, indicated by a p-value of .01. However, this does not mean that the difference is practically important, as no effect size was reported.",
+    "words": 32,
+    "p_eval": 0.0
+   },
+   "single": {
+    "text": "The difference between the two groups was statistically significant, with a p-value of .01. However, this does not indicate the difference is practically important, and no effect size was provided.",
+    "words": 30,
+    "p_eval": 0.0
+   }
+  },
+  {
+   "profile": "misconceived",
+   "item": "n1",
+   "intended": "neutral",
+   "trace": [
+    {
+     "round": 0,
+     "text": "A small pilot study with 12 learners showed no significant difference in results between the group using the chatbot and the control group (p = .40). This does not mean the chatbot is ineffective for learning; more research is needed to understand its potential impact.",
+     "p_sim": 0.268,
+     "u": -1.856
+    },
+    {
+     "round": 0,
+     "text": "A pilot study involving 12 learners showed no major difference in results between the group using the chatbot and the group that did not use it (p = .40). This does not prove that the chatbot is ineffective for learning. More research is needed to understand its potential effects.",
+     "p_sim": 0.211,
+     "u": -2.146
+    },
+    {
+     "round": 0,
+     "text": "A small study with 12 learners showed that there was no big difference in results between the group using the chatbot and the control group, with a p-value of .40. This does not necessarily mean the chatbot has no impact on learning; it just means that in this study, we didn't see a clear effect.",
+     "p_sim": 0.771,
+     "u": -0.92
+    },
+    {
+     "round": 0,
+     "text": "A small study with 12 learners showed that there was no meaningful difference in learning between those who used the chatbot and those who did not (p = .40). This does not mean the chatbot has no effect; it simply shows that more research is needed.",
+     "p_sim": 0.061,
+     "u": -3.356
+    },
+    {
+     "round": 0,
+     "text": "A pilot study involving 12 learners showed that there was no meaningful difference in results between the group using the chatbot and the control group, with a p-value of .40. This does not mean the chatbot has no impact on learning; it just indicates that more research is needed.",
+     "p_sim": 0.241,
+     "u": -2.011
+    },
+    {
+     "round": 1,
+     "text": "A pilot study with 12 learners showed no significant difference between the group using the chatbot and the control group, with a p-value of .40. This means the results do not support strong evidence that the chatbot was effective compared to regular learning methods. It\u2019s important to note that a non-significant result does not prove that there is no effect; it only indicates that the study did not find strong enough evidence to claim a difference.",
+     "p_sim": 0.668,
+     "u": -1.315
+    },
+    {
+     "round": 1,
+     "text": "In a small study with 12 learners, researchers found no significant difference between the group using the chatbot and the control group, with a p-value of .40. This means that the results do not provide strong evidence that the chatbot has a meaningful effect on learning. It does not prove that the chatbot is ineffective; rather, it's possible that more research is needed to draw a clear conclusion.",
+     "p_sim": 0.029,
+     "u": -4.358
+    },
+    {
+     "round": 1,
+     "text": "A pilot study with 12 learners found no significant difference between the chatbot group and the control group (p = .40). This means that the study did not show strong evidence that the chatbot helped learning more than the control. However, it doesn't prove that the chatbot has no effect at all; it just shows that any effect might not be large enough to be noticed with this small group.",
+     "p_sim": 0.967,
+     "u": -0.873
+    },
+    {
+     "round": 1,
+     "text": "A small pilot study with 12 learners showed no significant difference between the group using the chatbot and the control group, with a p-value of .40. This means that, based on this study, we can't conclude the chatbot has a strong effect on learning. It's important to remember that a non-significant result doesn't prove there\u2019s no effect; it simply means we didn't find strong evidence for one in this case.",
+     "p_sim": 0.022,
+     "u": -4.677
+    },
+    {
+     "round": 1,
+     "text": "In a pilot study with 12 learners, the results showed no significant difference in learning outcomes between the group using the chatbot and the control group (p = .40). This does not mean the chatbot has no effect; it simply indicates that any difference found was not large enough to be statistically significant. In other words, both groups performed similarly in this study.",
+     "p_sim": 0.157,
+     "u": -2.61
+    }
+   ],
+   "literal": {
+    "text": "A pilot study with 12 learners found no significant difference between the chatbot group and the control group (p = .40).",
+    "words": 21,
+    "p_eval": 0.0
+   },
+   "plain": {
+    "text": "A pilot study involving 12 learners showed that there was no significant difference in results between the group using the chatbot and the control group, with a p-value of 0.40.",
+    "words": 30,
+    "p_eval": 0.0
+   },
+   "rsa": {
+    "text": "A pilot study with 12 learners found no significant difference between the chatbot group and the control group (p = .40). This means that the study did not show strong evidence that the chatbot helped learning more than the control. However, it doesn't prove that the chatbot has no effect at all; it just shows that any effect might not be large enough to be noticed with this small group.",
+    "words": 70,
+    "p_eval": 0.126
+   },
+   "single": {
+    "text": "A small pilot study with 12 learners showed no significant difference in results between the group using the chatbot and the control group (p = .40). This does not mean the chatbot is ineffective for learning; more research is needed to understand its potential impact.",
+    "words": 45,
+    "p_eval": 0.0
+   }
+  },
+  {
+   "profile": "misconceived",
+   "item": "n2",
+   "intended": "neutral",
+   "trace": [
+    {
+     "round": 0,
+     "text": "A small pilot study with 12 learners showed that there was no important difference in results between the group using the chatbot and the control group. This means the chatbot did not perform significantly better or worse than the regular lesson.",
+     "p_sim": 0.007,
+     "u": -5.468
+    },
+    {
+     "round": 0,
+     "text": "A pilot study with 12 learners showed that there was no significant difference in outcomes between the group using the chatbot and the control group (p = .40). This does not mean the chatbot works the same as traditional lessons; it simply indicates no strong evidence of its effectiveness.",
+     "p_sim": 0.008,
+     "u": -5.478
+    },
+    {
+     "round": 0,
+     "text": "A small pilot study with 12 learners showed no significant difference between the group using the chatbot and the control group, with a p-value of .40. This doesn't mean the chatbot works exactly the same as a regular lesson; it just indicates that the results were not significantly different.",
+     "p_sim": 0.338,
+     "u": -1.672
+    },
+    {
+     "round": 0,
+     "text": "A pilot study involving 12 learners found no significant difference in outcomes between the group using the chatbot and the control group, with a p-value of .40. This means that the chatbot did not outperform the regular lesson in this study. It's important to note that this doesn't prove the chatbot is ineffective; further research is needed.",
+     "p_sim": 0.15,
+     "u": -2.582
+    },
+    {
+     "round": 0,
+     "text": "A pilot study involving 12 learners found no significant difference in outcomes between those using the chatbot and those who received traditional lessons, with a p-value of .40. This does not mean the chatbot is just as effective; further research is needed for clearer results.",
+     "p_sim": 0.625,
+     "u": -1.011
+    },
+    {
+     "round": 1,
+     "text": "A pilot study with 12 learners found no significant difference between the group using the chatbot and the control group, with a p-value of .40. This means the results do not provide strong evidence that the chatbot is better or worse than the normal lesson. It does not confirm that the chatbot works the same way; it simply indicates that there was no clear advantage seen in this small group.",
+     "p_sim": 0.023,
+     "u": -4.621
+    },
+    {
+     "round": 1,
+     "text": "A pilot study with 12 learners found no significant difference between the chatbot group and the control group (p = .40), meaning the results do not support a strong conclusion about the effectiveness of the chatbot. It does not prove that the chatbot works as well as a traditional lesson; it simply indicates that, in this small study, we didn't find evidence of a better outcome with the chatbot compared to the control.",
+     "p_sim": 0.012,
+     "u": -5.316
+    },
+    {
+     "round": 1,
+     "text": "A pilot study with 12 learners found no significant difference between the chatbot group and the control group (p = .40). This means the results suggest that the chatbot may not offer any clear advantage over traditional lessons. However, it also doesn't prove that the chatbot is equally effective; further research is needed for a more definite conclusion.",
+     "p_sim": 0.222,
+     "u": -2.201
+    },
+    {
+     "round": 1,
+     "text": "A pilot study with 12 learners found no significant difference between the chatbot group and the control group (p = .40). This means that we did not find strong evidence that the chatbot is better or worse than a normal lesson. It doesn't prove that they work the same, but it suggests that any difference might not be important.",
+     "p_sim": 0.715,
+     "u": -1.044
+    },
+    {
+     "round": 1,
+     "text": "A pilot study with 12 learners found no significant difference between the chatbot group and the control group (p = .40). This means that the results don\u2019t strongly support the idea that the chatbot is better or worse than the standard lesson. It doesn't prove that they are equally good, but rather that the evidence isn\u2019t strong enough to conclude a clear difference.",
+     "p_sim": 0.546,
+     "u": -1.361
+    }
+   ],
+   "literal": {
+    "text": "A pilot study with 12 learners found no significant difference between the chatbot group and the control group (p = .40).",
+    "words": 21,
+    "p_eval": 0.0
+   },
+   "plain": {
+    "text": "A pilot study involving 12 learners showed that there was no significant difference in results between the group using the chatbot and the control group, with a p-value of 0.40.",
+    "words": 30,
+    "p_eval": 0.0
+   },
+   "rsa": {
+    "text": "A pilot study involving 12 learners found no significant difference in outcomes between those using the chatbot and those who received traditional lessons, with a p-value of .40. This does not mean the chatbot is just as effective; further research is needed for clearer results.",
+    "words": 45,
+    "p_eval": 0.0
+   },
+   "single": {
+    "text": "A small pilot study with 12 learners showed that there was no important difference in results between the group using the chatbot and the control group. This means the chatbot did not perform significantly better or worse than the regular lesson.",
+    "words": 41,
+    "p_eval": 0.0
+   }
+  },
+  {
+   "profile": "misconceived",
+   "item": "c1",
+   "intended": "neutral",
+   "trace": [
+    {
+     "round": 0,
+     "text": "The average exam score was 72 points. We can be 95% confident that the true average score for all students falls between 69 and 75 points. This does not mean that most students scored within that range.",
+     "p_sim": 0.853,
+     "u": -0.603
+    },
+    {
+     "round": 0,
+     "text": "The average exam score was 72 points. We are 95% confident that the true average score is between 69 and 75 points. This does not mean that most students scored within that range.",
+     "p_sim": 0.762,
+     "u": -0.668
+    },
+    {
+     "round": 0,
+     "text": "The average exam score was 72 points. We are 95% confident that the true average score falls between 69 and 75 points. This does not mean that 95% of students scored in that range.",
+     "p_sim": 0.966,
+     "u": -0.442
+    },
+    {
+     "round": 0,
+     "text": "The average exam score was 72 points. We can be 95% confident that the true average score lies between 69 and 75 points. This doesn\u2019t mean that 95% of students scored within this range.",
+     "p_sim": 0.928,
+     "u": -0.483
+    },
+    {
+     "round": 0,
+     "text": "The average exam score was 72 points. We are 95% confident that the true average score for all students is between 69 and 75 points. This does not mean that most students scored in that range.",
+     "p_sim": 0.469,
+     "u": -1.189
+    }
+   ],
+   "literal": {
+    "text": "The mean exam score was 72 points, with a 95% confidence interval from 69 to 75 points.",
+    "words": 17,
+    "p_eval": 0.0
+   },
+   "plain": {
+    "text": "The average exam score was 72 points, and we are 95% confident that the true average score falls between 69 and 75 points.",
+    "words": 23,
+    "p_eval": 0.0
+   },
+   "rsa": {
+    "text": "The average exam score was 72 points. We are 95% confident that the true average score falls between 69 and 75 points. This does not mean that 95% of students scored in that range.",
+    "words": 34,
+    "p_eval": 0.0
+   },
+   "single": {
+    "text": "The average exam score was 72 points. We can be 95% confident that the true average score for all students falls between 69 and 75 points. This does not mean that most students scored within that range.",
+    "words": 37,
+    "p_eval": 0.0
+   }
+  },
+  {
+   "profile": "misconceived",
+   "item": "c2",
+   "intended": "neutral",
+   "trace": [
+    {
+     "round": 0,
+     "text": "The average score on the exam was 72 points. We can be 95% confident that the true average falls between 69 and 75 points. This means that a student scoring 80 points did better than most, but it's not considered unusually high for this group.",
+     "p_sim": 0.998,
+     "u": -0.542
+    },
+    {
+     "round": 0,
+     "text": "The average exam score was 72 points. We can be 95% confident that the scores for most students ranged from 69 to 75 points. This means that a score of 80 points is higher than what most students scored.",
+     "p_sim": 0.033,
+     "u": -3.893
+    },
+    {
+     "round": 0,
+     "text": "The average exam score was 72 points, and we are 95% confident that the true average score lies between 69 and 75 points. A score of 80 points is above the average but still within a reasonable range for individual performance.",
+     "p_sim": 0.988,
+     "u": -0.504
+    },
+    {
+     "round": 0,
+     "text": "The average exam score for the group was 72 points. We can be 95% confident that the true average score is between 69 and 75 points. An individual score of 80 points is above this range.",
+     "p_sim": 0.374,
+     "u": -1.416
+    },
+    {
+     "round": 0,
+     "text": "The average exam score was 72 points. We are 95% confident that the true average score falls between 69 and 75 points. A student who scored 80 points did better than most, but it doesn't mean their score was typical for the group.",
+     "p_sim": 0.679,
+     "u": -0.904
+    }
+   ],
+   "literal": {
+    "text": "The mean exam score was 72 points, with a 95% confidence interval from 69 to 75 points.",
+    "words": 17,
+    "p_eval": 0.689
+   },
+   "plain": {
+    "text": "The average exam score was 72 points, and we are 95% confident that the true average score falls between 69 and 75 points.",
+    "words": 23,
+    "p_eval": 1.0
+   },
+   "rsa": {
+    "text": "The average exam score was 72 points, and we are 95% confident that the true average score lies between 69 and 75 points. A score of 80 points is above the average but still within a reasonable range for individual performance.",
+    "words": 41,
+    "p_eval": 1.0
+   },
+   "single": {
+    "text": "The average score on the exam was 72 points. We can be 95% confident that the true average falls between 69 and 75 points. This means that a student scoring 80 points did better than most, but it's not considered unusually high for this group.",
+    "words": 45,
+    "p_eval": 1.0
+   }
+  },
+  {
+   "profile": "misconceived",
+   "item": "r1",
+   "intended": "neutral",
+   "trace": [
+    {
+     "round": 0,
+     "text": "Among 300 students, those who spent more time on the learning platform tended to have higher final grades (r = .45). However, this doesn't mean that more time directly causes better grades. Other factors could also play a role.",
+     "p_sim": 0.012,
+     "u": -4.924
+    },
+    {
+     "round": 0,
+     "text": "In a study of 300 students, there was a positive relationship between the time spent on the learning platform and their final grades, with a correlation coefficient of r = .45. This means that students who spent more time on the platform tended to have higher grades, but it doesn't prove that more time alone leads to better grades. Other factors could also influence this outcome.",
+     "p_sim": 0.002,
+     "u": -7.07
+    },
+    {
+     "round": 0,
+     "text": "In a study of 300 students, researchers found that there was a positive relationship between the time spent on the learning platform and the final grades, with a correlation coefficient of r = 0.45. This means that students who spent more time on the platform tended to achieve higher grades, but it does not prove that more time directly improves grades.",
+     "p_sim": 0.002,
+     "u": -6.914
+    },
+    {
+     "round": 0,
+     "text": "In a study with 300 students, researchers found that those who spent more time on the learning platform generally had higher final grades (r = .45). However, this doesn't mean that using the platform causes better grades; other factors could also be involved.",
+     "p_sim": 0.017,
+     "u": -4.587
+    },
+    {
+     "round": 0,
+     "text": "For 300 students, there was a positive relationship between the time they spent on the learning platform and their final grades, with a correlation of r = .45. This means that as students spent more time on the platform, their grades tended to be higher, but it doesn't mean that more time directly causes better grades.",
+     "p_sim": 0.016,
+     "u": -4.838
+    },
+    {
+     "round": 1,
+     "text": "In a study of 300 students, researchers found that those who spent more time on the learning platform tended to have higher final grades, with a correlation of r = .45. However, this does not mean that spending more time directly causes better grades; it only shows that there is a relationship between the two. Other factors might also influence students\u2019 grades.",
+     "p_sim": 0.005,
+     "u": -6.053
+    },
+    {
+     "round": 1,
+     "text": "In a study with 300 students, researchers found that the time students spent on the learning platform was related to their final grades, showing a positive correlation (r = .45). However, this does not mean that spending more time on the platform directly leads to better grades; other factors may also influence the results. Correlation simply indicates a relationship, not a cause-and-effect scenario.",
+     "p_sim": 0.03,
+     "u": -4.272
+    },
+    {
+     "round": 1,
+     "text": "A study involving 300 students showed that the time they spent on the learning platform was positively connected to their final grades (r = .45). This means that students who spent more time on the platform tended to have higher grades, but it does not prove that more time causes better grades. There could be other factors at play that also influence these results.",
+     "p_sim": 0.017,
+     "u": -4.822
+    },
+    {
+     "round": 1,
+     "text": "In a study of 300 students, there was a positive relationship between the time they spent on the learning platform and their final grades, with a correlation coefficient of r = .45. This means that as students spent more time on the platform, their grades tended to be higher. However, it's important to remember that correlation does not prove that one factor causes the other.",
+     "p_sim": 0.003,
+     "u": -6.756
+    },
+    {
+     "round": 1,
+     "text": "Among 300 students, the time they spent on the learning platform was positively linked to their final grades (r = .45). This means that students who spent more time on the platform tend to have higher grades, but we can't say that spending more time directly causes better grades. Other factors could also be influencing this relationship.",
+     "p_sim": 0.042,
+     "u": -3.857
+    }
+   ],
+   "literal": {
+    "text": "Across 300 students, time spent on the learning platform was positively correlated with final grades (r = .45).",
+    "words": 18,
+    "p_eval": 0.0
+   },
+   "plain": {
+    "text": "In a study of 300 students, there was a positive relationship between the time they spent on the learning platform and their final grades, with a correlation coefficient of r = .45.",
+    "words": 32,
+    "p_eval": 0.0
+   },
+   "rsa": {
+    "text": "Among 300 students, the time they spent on the learning platform was positively linked to their final grades (r = .45). This means that students who spent more time on the platform tend to have higher grades, but we can't say that spending more time directly causes better grades. Other factors could also be influencing this relationship.",
+    "words": 57,
+    "p_eval": 0.0
+   },
+   "single": {
+    "text": "Among 300 students, those who spent more time on the learning platform tended to have higher final grades (r = .45). However, this doesn't mean that more time directly causes better grades. Other factors could also play a role.",
+    "words": 39,
+    "p_eval": 0.0
+   }
+  },
+  {
+   "profile": "misconceived",
+   "item": "r2",
+   "intended": "neutral",
+   "trace": [
+    {
+     "round": 0,
+     "text": "In a study of 300 students, there was a positive relationship between the time they spent on the learning platform and their final grades (r = .45). This means that students who used the platform more tended to have better grades. However, it doesn't prove that increasing time on the platform will directly improve grades.",
+     "p_sim": 0.005,
+     "u": -6.022
+    },
+    {
+     "round": 0,
+     "text": "In a study of 300 students, the amount of time they spent using the learning platform was linked to higher final grades (r = .45). This means that students who spent more time on the platform tended to have better grades, but it doesn't prove that more time guarantees better grades.",
+     "p_sim": 0.002,
+     "u": -6.81
+    },
+    {
+     "round": 0,
+     "text": "In a study of 300 students, those who spent more time on the learning platform tended to have higher final grades (r = .45). However, this does not mean that increasing platform time will guarantee better grades for everyone. It's just a connection, not a cause-and-effect.",
+     "p_sim": 0.049,
+     "u": -3.563
+    },
+    {
+     "round": 0,
+     "text": "In a study of 300 students, those who spent more time on the learning platform had higher final grades (r = .45). This does not mean that requiring more time will guarantee better grades. It's important to consider other factors that might also influence student performance.",
+     "p_sim": 0.009,
+     "u": -5.222
+    },
+    {
+     "round": 0,
+     "text": "In a study of 300 students, there was a positive relationship between the time spent on the learning platform and their final grades, with a correlation of r = .45. This means that students who spent more time on the platform tended to have better grades, but it doesn't prove that more time directly causes higher grades.",
+     "p_sim": 0.025,
+     "u": -4.368
+    },
+    {
+     "round": 1,
+     "text": "Among 300 students, there was a positive relationship between the time spent on the learning platform and their final grades (r = .45). However, this doesn't mean that spending more time on the platform will directly improve grades. Other factors might also be affecting both time spent and grades.",
+     "p_sim": 0.016,
+     "u": -4.714
+    },
+    {
+     "round": 1,
+     "text": "In a study of 300 students, there was a positive relationship between the time spent on the learning platform and final grades, with a correlation of r = .45. However, this does not mean that spending more time causes higher grades; other factors could be at play. It's essential to understand that correlation does not equal causation.",
+     "p_sim": 0.025,
+     "u": -4.366
+    },
+    {
+     "round": 1,
+     "text": "In a study of 300 students, those who spent more time on the learning platform tended to have higher final grades (r = .45). However, this doesn't mean that more time on the platform directly causes better grades. Other factors could also play a role in students' performances.",
+     "p_sim": 0.013,
+     "u": -4.907
+    },
+    {
+     "round": 1,
+     "text": "In a study of 300 students, there was a positive relationship between the time they spent on the learning platform and their final grades, indicated by a correlation of r = .45. However, this does not mean that more time on the platform will directly cause better grades. Many factors can influence both time spent and grades.",
+     "p_sim": 0.114,
+     "u": -2.858
+    },
+    {
+     "round": 1,
+     "text": "In a study of 300 students, those who spent more time on the learning platform tended to have higher final grades (r = .45). However, this does not mean that more time on the platform directly causes better grades. Other factors may also influence a student's performance.",
+     "p_sim": 0.018,
+     "u": -4.581
+    }
+   ],
+   "literal": {
+    "text": "Across 300 students, time spent on the learning platform was positively correlated with final grades (r = .45).",
+    "words": 18,
+    "p_eval": 0.0
+   },
+   "plain": {
+    "text": "In a study of 300 students, there was a positive relationship between the time they spent on the learning platform and their final grades, with a correlation coefficient of r = .45.",
+    "words": 32,
+    "p_eval": 0.0
+   },
+   "rsa": {
+    "text": "In a study of 300 students, there was a positive relationship between the time they spent on the learning platform and their final grades, indicated by a correlation of r = .45. However, this does not mean that more time on the platform will directly cause better grades. Many factors can influence both time spent and grades.",
+    "words": 57,
+    "p_eval": 0.0
+   },
+   "single": {
+    "text": "In a study of 300 students, there was a positive relationship between the time they spent on the learning platform and their final grades (r = .45). This means that students who used the platform more tended to have better grades. However, it doesn't prove that increasing time on the platform will directly improve grades.",
+    "words": 55,
+    "p_eval": 0.0
+   }
+  },
+  {
+   "profile": "misconceived",
+   "item": "e1",
+   "intended": "contradiction",
+   "trace": [
+    {
+     "round": 0,
+     "text": "One hundred students read a text, and on average, they took 40 minutes to finish it. The standard error was 2 minutes, but this does not mean most students read within 38 to 42 minutes.",
+     "p_sim": 0.983,
+     "u": -0.437
+    },
+    {
+     "round": 0,
+     "text": "One hundred students read a text, and on average, they took 40 minutes. The standard error was 2 minutes, which means the average could vary slightly. This does not mean most students finished in the range of 38 to 42 minutes.",
+     "p_sim": 0.987,
+     "u": -0.506
+    },
+    {
+     "round": 0,
+     "text": "One hundred students read a text, and the average time it took them was 40 minutes. The standard error was 2 minutes, but this doesn't mean most students took between 38 and 42 minutes.",
+     "p_sim": 0.944,
+     "u": -0.466
+    },
+    {
+     "round": 0,
+     "text": "Out of 100 students, the average time it took to read the text was 40 minutes, with a standard error of 2 minutes. This means that while the average is 40 minutes, it does not mean that most students read within 38 to 42 minutes.",
+     "p_sim": 1.0,
+     "u": -0.54
+    },
+    {
+     "round": 0,
+     "text": "One hundred students read a text, and the average time it took them was 40 minutes. The standard error was 2 minutes, which means the average could vary a bit. This does not mean that most students read it in the range of 38 to 42 minutes.",
+     "p_sim": 0.99,
+     "u": -0.574
+    }
+   ],
+   "literal": {
+    "text": "100 students read a text; the mean reading time was 40 minutes, with a standard error of 2 minutes.",
+    "words": 19,
+    "p_eval": 0.894
+   },
+   "plain": {
+    "text": "A group of 100 students read a text, and on average, it took them 40 minutes to finish. The standard error of their reading time was 2 minutes.",
+    "words": 28,
+    "p_eval": 0.745
+   },
+   "rsa": {
+    "text": "One hundred students read a text, and on average, they took 40 minutes to finish it. The standard error was 2 minutes, but this does not mean most students read within 38 to 42 minutes.",
+    "words": 35,
+    "p_eval": 1.0
+   },
+   "single": {
+    "text": "One hundred students read a text, and on average, they took 40 minutes to finish it. The standard error was 2 minutes, but this does not mean most students read within 38 to 42 minutes.",
+    "words": 35,
+    "p_eval": 1.0
+   }
+  },
+  {
+   "profile": "misconceived",
+   "item": "e2",
+   "intended": "entailment",
+   "trace": [
+    {
+     "round": 0,
+     "text": "One hundred students read a text, and the average reading time was 40 minutes, with a standard error of 2 minutes. This means that the reading times of most students were close to the average, not differing by 20 minutes.",
+     "p_sim": 0.0,
+     "u": -12.558
+    },
+    {
+     "round": 0,
+     "text": "One hundred students read a text, and on average, it took them 40 minutes to finish. The times varied a little, with a standard error of 2 minutes, which means most students finished close to that average.",
+     "p_sim": 0.0,
+     "u": -14.26
+    },
+    {
+     "round": 0,
+     "text": "One hundred students read a text, taking an average of 40 minutes each. The standard error was 2 minutes, which means most students' reading times were close to the average. This does not mean that reading times varied by around 20 minutes.",
+     "p_sim": 0.002,
+     "u": -6.948
+    },
+    {
+     "round": 0,
+     "text": "One hundred students read a text, taking an average of 40 minutes to finish. The standard error was 2 minutes, which means there's small variability in the timing. However, it does not mean that individual reading times varied by 20 minutes from the average.",
+     "p_sim": 0.0,
+     "u": -8.608
+    },
+    {
+     "round": 0,
+     "text": "One hundred students read a text. On average, they took 40 minutes, and the reading times varied slightly, with a standard error of 2 minutes. This means most students' times were close to the average, not 20 minutes different.",
+     "p_sim": 0.0,
+     "u": -14.284
+    },
+    {
+     "round": 1,
+     "text": "Out of 100 students who read a text, the average reading time was 40 minutes, with a standard error of 2 minutes. This means that individual reading times usually don't vary too much from the average. It's important to note that the standard error shows how consistent the reading times are relative to the mean.",
+     "p_sim": 0.0,
+     "u": -12.864
+    },
+    {
+     "round": 1,
+     "text": "In a group of 100 students, the average reading time for a text was 40 minutes. The standard error of 2 minutes shows how much individual reading times could vary around that average. It's important to note that this means most students' times were close to 40 minutes, not that they differed by 20 minutes.",
+     "p_sim": 0.0,
+     "u": -8.631
+    },
+    {
+     "round": 1,
+     "text": "A group of 100 students read a text, and on average, they spent 40 minutes reading it. The standard error was 2 minutes, which shows how much individual reading times vary from the average. This means that most students' reading times were close to 40 minutes, not usually around 20 minutes different.",
+     "p_sim": 0.0,
+     "u": -14.44
+    },
+    {
+     "round": 1,
+     "text": "Out of 100 students, the average reading time was 40 minutes, and the standard error was 2 minutes. This means that individual reading times were generally close to the average, but not exactly the same. It's normal for some students to take a bit more or less time than the average.",
+     "p_sim": 0.0,
+     "u": -13.237
+    },
+    {
+     "round": 1,
+     "text": "One hundred students read a text, and on average, they took 40 minutes. The standard error was 2 minutes, which means that individual reading times usually varied slightly around the average. It\u2019s important to note that this does not mean students varied by 20 minutes from the average.",
+     "p_sim": 0.0,
+     "u": -12.67
+    }
+   ],
+   "literal": {
+    "text": "100 students read a text; the mean reading time was 40 minutes, with a standard error of 2 minutes.",
+    "words": 19,
+    "p_eval": 1.0
+   },
+   "plain": {
+    "text": "A group of 100 students read a text, and on average, it took them 40 minutes to finish. The standard error of their reading time was 2 minutes.",
+    "words": 28,
+    "p_eval": 0.0
+   },
+   "rsa": {
+    "text": "One hundred students read a text, taking an average of 40 minutes each. The standard error was 2 minutes, which means most students' reading times were close to the average. This does not mean that reading times varied by around 20 minutes.",
+    "words": 42,
+    "p_eval": 0.0
+   },
+   "single": {
+    "text": "One hundred students read a text, and the average reading time was 40 minutes, with a standard error of 2 minutes. This means that the reading times of most students were close to the average, not differing by 20 minutes.",
+    "words": 40,
+    "p_eval": 0.0
+   }
+  },
+  {
+   "profile": "mixed",
+   "item": "s1",
+   "intended": "contradiction",
+   "trace": [
+    {
+     "round": 0,
+     "text": "In a study involving 20,000 students, a learning app increased scores on a 100-point test by an average of 0.4 points. This change is statistically significant, but it's a small effect overall.",
+     "p_sim": 0.971,
+     "u": -0.414
+    },
+    {
+     "round": 0,
+     "text": "In a study with 20,000 students, a learning app increased test scores by an average of 0.4 points on a 100-point test, which is a small change (p < .001). This means the app does improve scores, but not by a lot.",
+     "p_sim": 1.0,
+     "u": -0.504
+    },
+    {
+     "round": 0,
+     "text": "In a study involving 20,000 students, a learning app increased average scores on a 100-point test by 0.4 points. This change is statistically significant, but it's important to note that 0.4 points is a small effect.",
+     "p_sim": 0.894,
+     "u": -0.544
+    },
+    {
+     "round": 0,
+     "text": "A study involving 20,000 students found that a learning app improved test scores by an average of 0.4 points on a 100-point test, which is statistically significant (p < .001). However, this change is small and does not indicate a large effect on scores.",
+     "p_sim": 0.999,
+     "u": -0.529
+    },
+    {
+     "round": 0,
+     "text": "In a study involving 20,000 students, a learning app improved test scores by an average of 0.4 points on a 100-point test (p < .001). This change is statistically significant, but it is a small increase. So, the app doesn't have a large effect on improving scores.",
+     "p_sim": 1.0,
+     "u": -0.564
+    }
+   ],
+   "literal": {
+    "text": "In a study with 20,000 students, a learning app raised scores on a 100-point test by 0.4 points on average (p < .001).",
+    "words": 23,
+    "p_eval": 0.0
+   },
+   "plain": {
+    "text": "In a study involving 20,000 students, a learning app improved test scores on a 100-point scale by an average of 0.4 points, and this result is statistically significant (p < .001).",
+    "words": 31,
+    "p_eval": 0.0
+   },
+   "rsa": {
+    "text": "In a study involving 20,000 students, a learning app increased scores on a 100-point test by an average of 0.4 points. This change is statistically significant, but it's a small effect overall.",
+    "words": 32,
+    "p_eval": 0.0
+   },
+   "single": {
+    "text": "In a study involving 20,000 students, a learning app increased scores on a 100-point test by an average of 0.4 points. This change is statistically significant, but it's a small effect overall.",
+    "words": 32,
+    "p_eval": 0.0
+   }
+  },
+  {
+   "profile": "mixed",
+   "item": "s2",
+   "intended": "neutral",
+   "trace": [
+    {
+     "round": 0,
+     "text": "The difference between the two groups was statistically significant, with a p-value of .01. However, this does not indicate the difference is practically important, and no effect size was provided.",
+     "p_sim": 1.0,
+     "u": -0.36
+    },
+    {
+     "round": 0,
+     "text": "The difference between the two groups was statistically significant, meaning it is unlikely to be due to chance (p = .01). However, this does not indicate how important the difference is in real-life situations, as no effect size was provided.",
+     "p_sim": 1.0,
+     "u": -0.48
+    },
+    {
+     "round": 0,
+     "text": "The difference between the two groups was statistically significant, indicated by a p-value of .01. However, this does not mean that the difference is practically important, as no effect size was reported.",
+     "p_sim": 1.0,
+     "u": -0.384
+    },
+    {
+     "round": 0,
+     "text": "The difference between the two groups was statistically significant, meaning it is unlikely to be due to chance (p = .01). However, we don't know how large or meaningful that difference is because an effect size was not provided.",
+     "p_sim": 1.0,
+     "u": -0.468
+    },
+    {
+     "round": 0,
+     "text": "The two groups showed a meaningful difference, indicated by a p-value of .01. However, there was no information about how large that difference is. This means we can't say if the difference is important in real life.",
+     "p_sim": 1.0,
+     "u": -0.444
+    }
+   ],
+   "literal": {
+    "text": "The difference between the two groups was statistically significant (p = .01). No effect size was reported.",
+    "words": 17,
+    "p_eval": 0.0
+   },
+   "plain": {
+    "text": "The difference between the two groups was statistically significant, meaning it is unlikely to have happened by chance, with a p-value of .01. However, there was no effect size reported, which means we don't know how large or meaningful the difference is.",
+    "words": 42,
+    "p_eval": 0.0
+   },
+   "rsa": {
+    "text": "The difference between the two groups was statistically significant, with a p-value of .01. However, this does not indicate the difference is practically important, and no effect size was provided.",
+    "words": 30,
+    "p_eval": 1.0
+   },
+   "single": {
+    "text": "The difference between the two groups was statistically significant, with a p-value of .01. However, this does not indicate the difference is practically important, and no effect size was provided.",
+    "words": 30,
+    "p_eval": 1.0
+   }
+  },
+  {
+   "profile": "mixed",
+   "item": "n1",
+   "intended": "neutral",
+   "trace": [
+    {
+     "round": 0,
+     "text": "A small pilot study with 12 learners showed no significant difference in results between the group using the chatbot and the control group (p = .40). This does not mean the chatbot is ineffective for learning; more research is needed to understand its potential impact.",
+     "p_sim": 0.863,
+     "u": -0.688
+    },
+    {
+     "round": 0,
+     "text": "A pilot study involving 12 learners showed no major difference in results between the group using the chatbot and the group that did not use it (p = .40). This does not prove that the chatbot is ineffective for learning. More research is needed to understand its potential effects.",
+     "p_sim": 1.0,
+     "u": -0.588
+    },
+    {
+     "round": 0,
+     "text": "A small study with 12 learners showed that there was no big difference in results between the group using the chatbot and the control group, with a p-value of .40. This does not necessarily mean the chatbot has no impact on learning; it just means that in this study, we didn't see a clear effect.",
+     "p_sim": 0.906,
+     "u": -0.759
+    },
+    {
+     "round": 0,
+     "text": "A small study with 12 learners showed that there was no meaningful difference in learning between those who used the chatbot and those who did not (p = .40). This does not mean the chatbot has no effect; it simply shows that more research is needed.",
+     "p_sim": 0.995,
+     "u": -0.557
+    },
+    {
+     "round": 0,
+     "text": "A pilot study involving 12 learners showed that there was no meaningful difference in results between the group using the chatbot and the control group, with a p-value of .40. This does not mean the chatbot has no impact on learning; it just indicates that more research is needed.",
+     "p_sim": 0.962,
+     "u": -0.627
+    }
+   ],
+   "literal": {
+    "text": "A pilot study with 12 learners found no significant difference between the chatbot group and the control group (p = .40).",
+    "words": 21,
+    "p_eval": 0.0
+   },
+   "plain": {
+    "text": "A pilot study involving 12 learners showed that there was no significant difference in results between the group using the chatbot and the control group, with a p-value of 0.40.",
+    "words": 30,
+    "p_eval": 0.0
+   },
+   "rsa": {
+    "text": "A small study with 12 learners showed that there was no meaningful difference in learning between those who used the chatbot and those who did not (p = .40). This does not mean the chatbot has no effect; it simply shows that more research is needed.",
+    "words": 46,
+    "p_eval": 0.0
+   },
+   "single": {
+    "text": "A small pilot study with 12 learners showed no significant difference in results between the group using the chatbot and the control group (p = .40). This does not mean the chatbot is ineffective for learning; more research is needed to understand its potential impact.",
+    "words": 45,
+    "p_eval": 0.0
+   }
+  },
+  {
+   "profile": "mixed",
+   "item": "n2",
+   "intended": "neutral",
+   "trace": [
+    {
+     "round": 0,
+     "text": "A small pilot study with 12 learners showed that there was no important difference in results between the group using the chatbot and the control group. This means the chatbot did not perform significantly better or worse than the regular lesson.",
+     "p_sim": 0.774,
+     "u": -0.748
+    },
+    {
+     "round": 0,
+     "text": "A pilot study with 12 learners showed that there was no significant difference in outcomes between the group using the chatbot and the control group (p = .40). This does not mean the chatbot works the same as traditional lessons; it simply indicates no strong evidence of its effectiveness.",
+     "p_sim": 0.991,
+     "u": -0.597
+    },
+    {
+     "round": 0,
+     "text": "A small pilot study with 12 learners showed no significant difference between the group using the chatbot and the control group, with a p-value of .40. This doesn't mean the chatbot works exactly the same as a regular lesson; it just indicates that the results were not significantly different.",
+     "p_sim": 0.99,
+     "u": -0.598
+    },
+    {
+     "round": 0,
+     "text": "A pilot study involving 12 learners found no significant difference in outcomes between the group using the chatbot and the control group, with a p-value of .40. This means that the chatbot did not outperform the regular lesson in this study. It's important to note that this doesn't prove the chatbot is ineffective; further research is needed.",
+     "p_sim": 0.979,
+     "u": -0.705
+    },
+    {
+     "round": 0,
+     "text": "A pilot study involving 12 learners found no significant difference in outcomes between those using the chatbot and those who received traditional lessons, with a p-value of .40. This does not mean the chatbot is just as effective; further research is needed for clearer results.",
+     "p_sim": 0.996,
+     "u": -0.544
+    }
+   ],
+   "literal": {
+    "text": "A pilot study with 12 learners found no significant difference between the chatbot group and the control group (p = .40).",
+    "words": 21,
+    "p_eval": 0.0
+   },
+   "plain": {
+    "text": "A pilot study involving 12 learners showed that there was no significant difference in results between the group using the chatbot and the control group, with a p-value of 0.40.",
+    "words": 30,
+    "p_eval": 0.0
+   },
+   "rsa": {
+    "text": "A pilot study involving 12 learners found no significant difference in outcomes between those using the chatbot and those who received traditional lessons, with a p-value of .40. This does not mean the chatbot is just as effective; further research is needed for clearer results.",
+    "words": 45,
+    "p_eval": 0.0
+   },
+   "single": {
+    "text": "A small pilot study with 12 learners showed that there was no important difference in results between the group using the chatbot and the control group. This means the chatbot did not perform significantly better or worse than the regular lesson.",
+    "words": 41,
+    "p_eval": 0.0
+   }
+  },
+  {
+   "profile": "mixed",
+   "item": "r1",
+   "intended": "neutral",
+   "trace": [
+    {
+     "round": 0,
+     "text": "Among 300 students, those who spent more time on the learning platform tended to have higher final grades (r = .45). However, this doesn't mean that more time directly causes better grades. Other factors could also play a role.",
+     "p_sim": 0.012,
+     "u": -4.924
+    },
+    {
+     "round": 0,
+     "text": "In a study of 300 students, there was a positive relationship between the time spent on the learning platform and their final grades, with a correlation coefficient of r = .45. This means that students who spent more time on the platform tended to have higher grades, but it doesn't prove that more time alone leads to better grades. Other factors could also influence this outcome.",
+     "p_sim": 0.002,
+     "u": -7.07
+    },
+    {
+     "round": 0,
+     "text": "In a study of 300 students, researchers found that there was a positive relationship between the time spent on the learning platform and the final grades, with a correlation coefficient of r = 0.45. This means that students who spent more time on the platform tended to achieve higher grades, but it does not prove that more time directly improves grades.",
+     "p_sim": 0.002,
+     "u": -6.914
+    },
+    {
+     "round": 0,
+     "text": "In a study with 300 students, researchers found that those who spent more time on the learning platform generally had higher final grades (r = .45). However, this doesn't mean that using the platform causes better grades; other factors could also be involved.",
+     "p_sim": 0.017,
+     "u": -4.587
+    },
+    {
+     "round": 0,
+     "text": "For 300 students, there was a positive relationship between the time they spent on the learning platform and their final grades, with a correlation of r = .45. This means that as students spent more time on the platform, their grades tended to be higher, but it doesn't mean that more time directly causes better grades.",
+     "p_sim": 0.016,
+     "u": -4.838
+    },
+    {
+     "round": 1,
+     "text": "In a study of 300 students, researchers found that those who spent more time on the learning platform tended to have higher final grades, with a correlation of r = .45. However, this does not mean that spending more time directly causes better grades; it only shows that there is a relationship between the two. Other factors might also influence students\u2019 grades.",
+     "p_sim": 0.005,
+     "u": -6.053
+    },
+    {
+     "round": 1,
+     "text": "In a study with 300 students, researchers found that the time students spent on the learning platform was related to their final grades, showing a positive correlation (r = .45). However, this does not mean that spending more time on the platform directly leads to better grades; other factors may also influence the results. Correlation simply indicates a relationship, not a cause-and-effect scenario.",
+     "p_sim": 0.03,
+     "u": -4.272
+    },
+    {
+     "round": 1,
+     "text": "A study involving 300 students showed that the time they spent on the learning platform was positively connected to their final grades (r = .45). This means that students who spent more time on the platform tended to have higher grades, but it does not prove that more time causes better grades. There could be other factors at play that also influence these results.",
+     "p_sim": 0.017,
+     "u": -4.822
+    },
+    {
+     "round": 1,
+     "text": "In a study of 300 students, there was a positive relationship between the time they spent on the learning platform and their final grades, with a correlation coefficient of r = .45. This means that as students spent more time on the platform, their grades tended to be higher. However, it's important to remember that correlation does not prove that one factor causes the other.",
+     "p_sim": 0.003,
+     "u": -6.756
+    },
+    {
+     "round": 1,
+     "text": "Among 300 students, the time they spent on the learning platform was positively linked to their final grades (r = .45). This means that students who spent more time on the platform tend to have higher grades, but we can't say that spending more time directly causes better grades. Other factors could also be influencing this relationship.",
+     "p_sim": 0.042,
+     "u": -3.857
+    }
+   ],
+   "literal": {
+    "text": "Across 300 students, time spent on the learning platform was positively correlated with final grades (r = .45).",
+    "words": 18,
+    "p_eval": 0.0
+   },
+   "plain": {
+    "text": "In a study of 300 students, there was a positive relationship between the time they spent on the learning platform and their final grades, with a correlation coefficient of r = .45.",
+    "words": 32,
+    "p_eval": 0.0
+   },
+   "rsa": {
+    "text": "Among 300 students, the time they spent on the learning platform was positively linked to their final grades (r = .45). This means that students who spent more time on the platform tend to have higher grades, but we can't say that spending more time directly causes better grades. Other factors could also be influencing this relationship.",
+    "words": 57,
+    "p_eval": 0.0
+   },
+   "single": {
+    "text": "Among 300 students, those who spent more time on the learning platform tended to have higher final grades (r = .45). However, this doesn't mean that more time directly causes better grades. Other factors could also play a role.",
+    "words": 39,
+    "p_eval": 0.0
+   }
+  },
+  {
+   "profile": "mixed",
+   "item": "r2",
+   "intended": "neutral",
+   "trace": [
+    {
+     "round": 0,
+     "text": "In a study of 300 students, there was a positive relationship between the time they spent on the learning platform and their final grades (r = .45). This means that students who used the platform more tended to have better grades. However, it doesn't prove that increasing time on the platform will directly improve grades.",
+     "p_sim": 0.005,
+     "u": -6.022
+    },
+    {
+     "round": 0,
+     "text": "In a study of 300 students, the amount of time they spent using the learning platform was linked to higher final grades (r = .45). This means that students who spent more time on the platform tended to have better grades, but it doesn't prove that more time guarantees better grades.",
+     "p_sim": 0.002,
+     "u": -6.81
+    },
+    {
+     "round": 0,
+     "text": "In a study of 300 students, those who spent more time on the learning platform tended to have higher final grades (r = .45). However, this does not mean that increasing platform time will guarantee better grades for everyone. It's just a connection, not a cause-and-effect.",
+     "p_sim": 0.049,
+     "u": -3.563
+    },
+    {
+     "round": 0,
+     "text": "In a study of 300 students, those who spent more time on the learning platform had higher final grades (r = .45). This does not mean that requiring more time will guarantee better grades. It's important to consider other factors that might also influence student performance.",
+     "p_sim": 0.009,
+     "u": -5.222
+    },
+    {
+     "round": 0,
+     "text": "In a study of 300 students, there was a positive relationship between the time spent on the learning platform and their final grades, with a correlation of r = .45. This means that students who spent more time on the platform tended to have better grades, but it doesn't prove that more time directly causes higher grades.",
+     "p_sim": 0.025,
+     "u": -4.368
+    },
+    {
+     "round": 1,
+     "text": "Among 300 students, there was a positive relationship between the time spent on the learning platform and their final grades (r = .45). However, this doesn't mean that spending more time on the platform will directly improve grades. Other factors might also be affecting both time spent and grades.",
+     "p_sim": 0.016,
+     "u": -4.714
+    },
+    {
+     "round": 1,
+     "text": "In a study of 300 students, there was a positive relationship between the time spent on the learning platform and final grades, with a correlation of r = .45. However, this does not mean that spending more time causes higher grades; other factors could be at play. It's essential to understand that correlation does not equal causation.",
+     "p_sim": 0.025,
+     "u": -4.366
+    },
+    {
+     "round": 1,
+     "text": "In a study of 300 students, those who spent more time on the learning platform tended to have higher final grades (r = .45). However, this doesn't mean that more time on the platform directly causes better grades. Other factors could also play a role in students' performances.",
+     "p_sim": 0.013,
+     "u": -4.907
+    },
+    {
+     "round": 1,
+     "text": "In a study of 300 students, there was a positive relationship between the time they spent on the learning platform and their final grades, indicated by a correlation of r = .45. However, this does not mean that more time on the platform will directly cause better grades. Many factors can influence both time spent and grades.",
+     "p_sim": 0.114,
+     "u": -2.858
+    },
+    {
+     "round": 1,
+     "text": "In a study of 300 students, those who spent more time on the learning platform tended to have higher final grades (r = .45). However, this does not mean that more time on the platform directly causes better grades. Other factors may also influence a student's performance.",
+     "p_sim": 0.018,
+     "u": -4.581
+    }
+   ],
+   "literal": {
+    "text": "Across 300 students, time spent on the learning platform was positively correlated with final grades (r = .45).",
+    "words": 18,
+    "p_eval": 0.0
+   },
+   "plain": {
+    "text": "In a study of 300 students, there was a positive relationship between the time they spent on the learning platform and their final grades, with a correlation coefficient of r = .45.",
+    "words": 32,
+    "p_eval": 0.0
+   },
+   "rsa": {
+    "text": "In a study of 300 students, there was a positive relationship between the time they spent on the learning platform and their final grades, indicated by a correlation of r = .45. However, this does not mean that more time on the platform will directly cause better grades. Many factors can influence both time spent and grades.",
+    "words": 57,
+    "p_eval": 0.0
+   },
+   "single": {
+    "text": "In a study of 300 students, there was a positive relationship between the time they spent on the learning platform and their final grades (r = .45). This means that students who used the platform more tended to have better grades. However, it doesn't prove that increasing time on the platform will directly improve grades.",
+    "words": 55,
+    "p_eval": 0.0
+   }
+  }
+ ]
+}
