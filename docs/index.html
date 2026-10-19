@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Whose Inference?</title>
+<meta name="description" content="A pilot study on predicting and repairing knowledge-dependent misinterpretations with personal knowledge bases.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,650&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fbfaf7; --surface: #ffffff; --ink: #1c1d21; --muted: #5b5d63; --line: #e4e2dc;
+  --accent: #12355b; --accent-soft: #e8eef5; --blue: #2a78d6; --orange: #eb6834;
+  --good: #1f6b3a; --good-soft: #e3f1e7; --bad: #a33a2b; --bad-soft: #f8e5e1;
+  --serif: "Source Serif 4", Georgia, serif; --sans: "Inter", system-ui, sans-serif; --mono: "JetBrains Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #141518; --surface: #1c1e22; --ink: #ecebe6; --muted: #a3a49f; --line: #2e3036;
+    --accent: #8fb6e3; --accent-soft: #1e2a38; --good: #7fd49a; --good-soft: #17301f; --bad: #f09a8a; --bad-soft: #3a211d; }
+  img.fig { background: #fcfcfb; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 var(--sans); }
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+header { padding: 72px 0 40px; border-bottom: 1px solid var(--line); }
+.kicker { font: 500 13px/1 var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+h1 { font: 650 clamp(40px, 7vw, 64px)/1.05 var(--serif); margin: 14px 0 18px; letter-spacing: -0.01em; }
+.lead { font: 400 20px/1.55 var(--serif); color: var(--ink); max-width: 680px; margin: 0; }
+.byline { margin-top: 22px; color: var(--muted); font-size: 15px; }
+.byline a, a { color: var(--accent); }
+.btns { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 26px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 8px; font-weight: 600; font-size: 15px; text-decoration: none; border: 1px solid var(--accent); }
+.btn.primary { background: var(--accent); color: var(--bg); }
+.btn.ghost { color: var(--accent); }
+section { padding: 48px 0; border-bottom: 1px solid var(--line); }
+h2 { font: 650 28px/1.2 var(--serif); margin: 0 0 6px; }
+.sub { color: var(--muted); margin: 0 0 24px; }
+h3 { font: 600 17px/1.3 var(--sans); margin: 28px 0 10px; }
+p { margin: 0 0 14px; }
+
+/* example */
+.example { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
+.quote { font: 500 21px/1.4 var(--serif); margin: 0 0 18px; }
+.readers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.reader { border: 1px solid var(--line); border-radius: 10px; padding: 14px; background: var(--bg); }
+.reader b { display: block; font-size: 14px; margin-bottom: 6px; }
+.reader span { font-size: 14px; color: var(--muted); }
+.tag { display: inline-block; font: 600 12px/1 var(--sans); padding: 4px 8px; border-radius: 6px; margin-top: 10px; }
+.tag.ok { background: var(--good-soft); color: var(--good); }
+.tag.no { background: var(--bad-soft); color: var(--bad); }
+
+/* pipeline */
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; counter-reset: s; }
+.step { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; position: relative; }
+.step::before { counter-increment: s; content: counter(s); font: 650 26px/1 var(--serif); color: var(--accent); display: block; margin-bottom: 8px; }
+.step b { display: block; font-size: 15px; margin-bottom: 4px; }
+.step span { font-size: 14px; color: var(--muted); }
+
+/* results */
+table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 8px 0 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--line); }
+th { font-weight: 600; color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: .04em; background: var(--bg); }
+td.num, th.num { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; }
+tr:last-child td { border-bottom: 0; }
+tr.hl td { font-weight: 600; }
+.note { font-size: 14px; color: var(--muted); }
+figure { margin: 18px 0; }
+img.fig { width: 100%; border: 1px solid var(--line); border-radius: 10px; display: block; }
+figcaption { font-size: 14px; color: var(--muted); margin-top: 8px; }
+.callout { border-left: 3px solid var(--accent); background: var(--accent-soft); padding: 14px 16px; border-radius: 0 8px 8px 0; margin: 16px 0; }
+.msgs { display: grid; gap: 10px; }
+.msg { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; display: grid; grid-template-columns: 110px 1fr auto; gap: 12px; align-items: start; font-size: 15px; }
+.msg .k { font-weight: 600; color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: .04em; padding-top: 2px; }
+.msg .v { font-family: var(--mono); font-size: 14px; white-space: nowrap; }
+ol.find { padding-left: 20px; } ol.find li { margin-bottom: 8px; }
+footer { padding: 32px 0 60px; color: var(--muted); font-size: 14px; }
+@media (max-width: 720px) {
+  .readers, .steps { grid-template-columns: 1fr; }
+  .msg { grid-template-columns: 1fr; gap: 4px; }
+  header { padding-top: 48px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="kicker">Pilot study · NLP · Computational pragmatics</div>
+    <h1>Whose Inference?</h1>
+    <p class="lead">The same sentence means different things to different readers. This pilot asks whether an AI system can predict <em>how a specific person</em> will interpret a message, using an explicit record of what they know and believe, and then rephrase the message so it is not misunderstood.</p>
+    <div class="byline">Amrina · Saarland University (M.Sc. Educational Technology)</div>
+    <div class="btns">
+      <a class="btn primary" href="https://github.com/sayamrina/whose-inference">View code on GitHub</a>
+      <a class="btn ghost" href="https://github.com/sayamrina/whose-inference#readme">Full report (README)</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>One sentence, three readers</h2>
+    <p class="sub">Each reader has a small personal knowledge base (PKB) of what they know and believe.</p>
+    <div class="example">
+      <p class="quote">“Two teaching methods were compared with a t-test, which gave p = .03.”</p>
+      <p style="margin-bottom:12px">Does it follow that <b>“there is a 97% probability that the difference is real”</b>?</p>
+      <div class="readers">
+        <div class="reader"><b>Methods lecturer</b><span>Knows that p is computed assuming no difference.</span><br><span class="tag ok">Does not conclude it</span></div>
+        <div class="reader"><b>Student, one stats course</b><span>Understands p-values, but believes “significant” means “large”.</span><br><span class="tag ok">Does not conclude it</span></div>
+        <div class="reader"><b>Teacher reading the news</b><span>Believes p is the probability that the null hypothesis is true.</span><br><span class="tag no">Concludes it (misreading)</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>The pipeline</h2>
+    <p class="sub">Four small steps, each probing one part of a cooperative, PKB-grounded system.</p>
+    <div class="steps">
+      <div class="step"><b>Knowledge-dependent data</b><span>24 premise–hypothesis items on six statistics misconceptions, labelled per reader type.</span></div>
+      <div class="step"><b>Predict the reader</b><span>Retrieve the reader's PKB triples from a knowledge graph; an LLM predicts their interpretation.</span></div>
+      <div class="step"><b>Rephrase cooperatively</b><span>RSA-style: generate candidates, simulate the reader, keep the message least likely to be misread.</span></div>
+      <div class="step"><b>Look inside the model</b><span>Where does the PKB enter the computation, and can one direction steer its use?</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Predicting a specific reader</h2>
+    <p class="sub">Does the model correctly predict whether the reader draws the inference? Critical items, 3 readers × 12.</p>
+    <table>
+      <thead><tr><th>Information about the reader</th><th class="num">Accuracy</th></tr></thead>
+      <tbody>
+        <tr><td>None</td><td class="num">42%</td></tr>
+        <tr><td>Whole PKB pasted as text</td><td class="num">58%</td></tr>
+        <tr class="hl"><td>PKB triples retrieved for this text (GPT-4o-mini)</td><td class="num">61%</td></tr>
+        <tr class="hl"><td>PKB triples retrieved for this text (GPT-4o)</td><td class="num">75%</td></tr>
+      </tbody>
+    </table>
+    <p>Editing one belief in a reader's PKB changes predictions for that concept and leaves the others alone in 98.5% of cases. But the model often reads the right PKB entry and still answers from its own, correct knowledge instead of the reader's perspective. A larger model does this less.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Rephrasing so the message lands</h2>
+    <p class="sub">The same example, rewritten for the teacher who believes p = P(null hypothesis). Score = how likely an independent model listener (GPT-4.1) thinks this reader understands it correctly.</p>
+    <div class="msgs">
+      <div class="msg"><span class="k">Original</span><span>Two teaching methods were compared with a t-test, which gave p = .03.</span><span class="v">0.00</span></div>
+      <div class="msg"><span class="k">Plain rewrite</span><span>A t-test was used to compare two teaching methods, and the result showed a p-value of 0.03.</span><span class="v">0.00</span></div>
+      <div class="msg"><span class="k">RSA choice</span><span>A t-test was used to compare two teaching methods, resulting in a p-value of .03. This means the difference between the methods is likely significant, but it doesn't mean there's a 97% chance the difference is real.</span><span class="v">1.00</span></div>
+    </div>
+    <div class="callout">Across 18 at-risk cases the picture is mixed: selecting messages with a simulated listener helped only when that listener was strong, and different model listeners disagreed sharply about the same texts. RSA is only as good as its listener model, and testing it properly needs <b>human readers</b>.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Inside the model</h2>
+    <p class="sub">Qwen2.5-0.5B-Instruct, 48 facts where the PKB says the user believes something false (e.g. “the capital of France is Lyon”).</p>
+    <table>
+      <thead><tr><th>Question asked</th><th class="num">Answer uses the PKB</th></tr></thead>
+      <tbody>
+        <tr><td>No PKB in the prompt</td><td class="num">0%</td></tr>
+        <tr class="hl"><td>“What does <em>the user believe</em> is the capital…?”</td><td class="num">100%</td></tr>
+        <tr><td>“What <em>is</em> the capital…?” (belief should not leak)</td><td class="num">17%</td></tr>
+      </tbody>
+    </table>
+    <figure>
+      <img class="fig" src="img/patching.png" alt="Activation patching: the effect sits at the PKB token until layer 15, then moves to the answer position at layer 16 and layers 20 to 22.">
+      <figcaption>Activation patching: the user's belief stays at the PKB entry until layer ~15, then is moved to the answer position in two steps (layer 16, layers 20–22).</figcaption>
+    </figure>
+    <figure>
+      <img class="fig" src="img/steering.png" alt="Steering at layer 12 raises user-perspective answers from 21 percent to 100 percent at alpha 8; layer 20 needs a larger alpha.">
+      <figcaption>Activation steering: one “user perspective” direction at layer 12 switches world questions to the user's belief (21% → 100%), while answers without a PKB stay correct (≥ 96%).</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What this suggests</h2>
+    <ol class="find">
+      <li>Interpretation depends on the reader. Measuring it properly needs NLI judgements from people with known knowledge states.</li>
+      <li>Retrieved PKBs help, but LLMs default to their own perspective. Making them faithfully take the reader's perspective is an open problem.</li>
+      <li>Cooperative generation inherits the quality of its listener model; validated listener models are the bottleneck.</li>
+      <li>In a small model, the line between “what the user believes” and “what is true” is localisable and steerable. Whether this holds at scale is the next question.</li>
+    </ol>
+    <p class="note">Limitations: tiny self-made datasets, idealised reader profiles, LLM listeners instead of people, and a 0.5B model for the interpretability part. Details and references in the <a href="https://github.com/sayamrina/whose-inference#readme">full report</a>.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Code, data and results: <a href="https://github.com/sayamrina/whose-inference">github.com/sayamrina/whose-inference</a></div>
+</footer>
+</body>
+</html>
