@@ -2,7 +2,7 @@
 
 **A mini-study of knowledge-dependent interpretation with personal knowledge bases (PKBs)**
 
-Amrina · Saarland University (M.Sc. Educational Technology) · October 2026
+Amrina · Saarland University (M.Sc. Educational Technology)
 
 When a tutor writes *"the result was significant, p = .03"*, a statistician and a student with a common misconception draw different conclusions from the same sentence. A cooperative AI system should know which reader it is talking to, predict how that reader will interpret a message, and phrase it so the intended meaning gets through. It should do this using an explicit, inspectable record of what the reader knows and believes (a PKB), and it should use that record faithfully.
 
@@ -94,7 +94,7 @@ The model mostly keeps *the user's belief* separate from *the world*, which is t
 
 ## Limitations (please read)
 
-- **Tiny, self-made data.** 24 items, written with AI assistance and reviewed by one person (the author). No inter-annotator agreement and no human reader data.
+- **Tiny, self-made data.** 24 items. No inter-annotator agreement and no human reader data.
 - The profiles are idealised: real readers are inconsistent.
 - The Part 3 evaluation uses LLM listeners. They disagree with each other, so the numbers are indicative only.
 - Part 4 uses a 0.5B model and a simple fact type (capitals). The results may not transfer to larger models or richer PKBs.
