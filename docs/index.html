@@ -26,7 +26,10 @@ header { padding: 72px 0 40px; border-bottom: 1px solid var(--line); }
 .kicker { font: 500 13px/1 var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 h1 { font: 650 clamp(40px, 7vw, 64px)/1.05 var(--serif); margin: 14px 0 18px; letter-spacing: -0.01em; }
 .lead { font: 400 20px/1.55 var(--serif); color: var(--ink); max-width: 680px; margin: 0; }
-.byline { margin-top: 22px; color: var(--muted); font-size: 15px; }
+.author { display: flex; align-items: center; gap: 12px; margin-top: 24px; }
+.author img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 1px solid var(--line); flex: none; }
+.author .name { font-weight: 600; font-size: 15px; }
+.byline { color: var(--muted); font-size: 14px; }
 .byline a, a { color: var(--accent); }
 .btns { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 26px; }
 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 8px; font-weight: 600; font-size: 15px; text-decoration: none; border: 1px solid var(--accent); }
@@ -87,7 +90,13 @@ footer { padding: 32px 0 60px; color: var(--muted); font-size: 14px; }
     <div class="kicker">Pilot study · NLP · Computational pragmatics</div>
     <h1>Whose Inference?</h1>
     <p class="lead">The same sentence means different things to different readers. This pilot asks whether an AI system can predict <em>how a specific person</em> will interpret a message, using an explicit record of what they know and believe, and then rephrase the message so it is not misunderstood.</p>
-    <div class="byline">Amrina · Saarland University (M.Sc. Educational Technology)</div>
+    <div class="author">
+      <img src="img/amrina.jpg" alt="Photo of Amrina" width="52" height="52">
+      <div>
+        <div class="name">Amrina</div>
+        <div class="byline">Saarland University (M.Sc. Educational Technology) · <a href="https://www.linkedin.com/in/amrina-ali-487025119/">LinkedIn</a> · <a href="https://github.com/sayamrina">GitHub</a></div>
+      </div>
+    </div>
     <div class="btns">
       <a class="btn primary" href="https://github.com/sayamrina/whose-inference">View code on GitHub</a>
       <a class="btn ghost" href="https://github.com/sayamrina/whose-inference#readme">Full report (README)</a>
