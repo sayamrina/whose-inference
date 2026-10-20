@@ -100,7 +100,7 @@ The model mostly keeps *the user's belief* separate from *the world*, which is t
 - The profiles are idealised: real readers are inconsistent.
 - The Part 3 evaluation uses LLM listeners. They disagree with each other, so the numbers are indicative only.
 - Part 4 uses a 0.5B model and a simple fact type (capitals). The results may not transfer to larger models or richer PKBs.
-- AI tools were used to support the coding process. Study design, item labels and interpretation of the results are the author's.
+- This project was built by Amrina, with AI as a supporting tool for coding. Study design, item labels and interpretation of the results are Amrina's own.
 
 ## Reproduce
 
