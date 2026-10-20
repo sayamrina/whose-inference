@@ -4,7 +4,7 @@
 
 Amrina · Saarland University (M.Sc. Educational Technology)
 
-🚀 **Live app:** https://whose-inference.streamlit.app/ · 🌐 **Project page:** https://sayamrina.github.io/whose-inference/
+🚀 **Live app:** https://whose-inference.streamlit.app/ · 🌐 **Project page:** https://sayamrina.github.io/whose-inference/ · 👤 **Portfolio:** https://sayamrina.github.io
 
 When a tutor writes *"the result was significant, p = .03"*, a statistician and a student with a common misconception draw different conclusions from the same sentence. A cooperative AI system should know which reader it is talking to, predict how that reader will interpret a message, and phrase it so the intended meaning gets through. It should do this using an explicit, inspectable record of what the reader knows and believes (a PKB), and it should use that record faithfully.
 

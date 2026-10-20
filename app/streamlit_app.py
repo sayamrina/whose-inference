@@ -91,7 +91,8 @@ st.markdown("The same sentence means different things to different readers. This
             "will interpret a statistical statement, from an explicit record of what they know and believe, and rewrites "
             "the statement so this reader does not misread it.")
 st.markdown("[Project page](https://sayamrina.github.io/whose-inference/) · "
-            "[Code and report](https://github.com/sayamrina/whose-inference) · by Amrina")
+            "[Code and report](https://github.com/sayamrina/whose-inference) · "
+            "by Amrina ([portfolio](https://sayamrina.github.io/))")
 
 tab1, tab2, tab3 = st.tabs(["1 · Predict a reader", "2 · Rephrase for this reader", "3 · Inside the model"])
 
