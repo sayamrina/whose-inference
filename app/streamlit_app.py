@@ -86,6 +86,27 @@ def show_pkb(g, item):
         st.info("No PKB entries match the concepts in this text, so the model treats the reader like anyone else.")
 
 
+# Portfolio banner: always visible, cannot be closed, opens the portfolio in a new tab
+PORTFOLIO_BANNER = """
+<style>
+.project-popup { display: flex; align-items: center; gap: 12px; width: fit-content; max-width: 100%; margin: 4px auto 14px;
+  padding: 8px 10px 8px 14px; background: #fff; color: #18212b; font-size: 14px; line-height: 1.4;
+  border: 1px solid #dde3ea; border-left: 4px solid #1f5fa8; border-radius: 12px; box-shadow: 0 10px 28px rgba(0, 0, 0, .10); }
+.project-popup-badge { display: grid; place-items: center; flex: none; width: 26px; height: 26px; border-radius: 50%;
+  background: #1f5fa8; color: #fff; font-size: 13px; }
+.project-popup a { flex: none; padding: 7px 12px; background: #173f6e; color: #fff !important; font-weight: 700;
+  text-decoration: none !important; border-radius: 8px; white-space: nowrap; }
+.project-popup a:hover { background: #1f5fa8; }
+@media (max-width: 640px) { .project-popup { flex-wrap: wrap; } }
+</style>
+<aside class="project-popup" aria-label="Portfolio project">
+  <span class="project-popup-badge" aria-hidden="true">★</span>
+  <span>This app was developed by Amrina as part of a portfolio.</span>
+  <a href="https://sayamrina.github.io/" target="_blank" rel="noopener">View the portfolio →</a>
+</aside>
+"""
+st.markdown(PORTFOLIO_BANNER, unsafe_allow_html=True)
+
 st.title("Whose Inference?")
 st.markdown("The same sentence means different things to different readers. This demo predicts **how a specific reader** "
             "will interpret a statistical statement, from an explicit record of what they know and believe, and rewrites "
