@@ -12,8 +12,8 @@ st.markdown("When a tutor writes “the result was significant, p = .03”, a st
             "which reader it is talking to, predict how that reader will understand a message, and phrase it so the "
             "intended meaning gets through. It should do this from an explicit, checkable record of what the reader "
             "knows and believes, and it should really use that record.")
-st.markdown("This pilot tests each step of that chain on a small scale. It was built for the doctoral topic "
-            "*Cooperative User Interfaces as Rational Agents* at Saarland University.")
+st.markdown("This pilot tests each step of that chain on a small scale. It grows out of Amrina's master's thesis, "
+            "an AI tutor that answers from course materials and shows its sources.")
 
 st.subheader("What was done")
 st.markdown("""

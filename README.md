@@ -87,7 +87,7 @@ The model mostly keeps *the user's belief* separate from *the world*, which is t
 
 *Note: the last-layer point in the patching plot is approximate, because the final hidden state returned by `transformers` is already normalised.*
 
-## What this suggests for a PhD project
+## What this suggests for future work
 
 1. Interpretation depends on the reader. Measuring this properly needs **human NLI judgements from readers with known knowledge states**, not self-made labels (cf. human label variation, Nie et al., 2020; ChaosNLI).
 2. Retrieval-grounded PKBs help prediction, but LLMs default to their own perspective. Making them *faithfully* take the reader's perspective is an open problem.
