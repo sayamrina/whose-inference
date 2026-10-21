@@ -113,6 +113,14 @@ export OPENAI_API_KEY=...                  # Parts 2-3 (about $2 in total); resp
 .venv/bin/python src/plots.py
 ```
 
+Run the app and the tests (no API key needed; dataset examples load from the cache):
+
+```bash
+.venv/bin/pip install -r app/requirements.txt pytest
+.venv/bin/streamlit run app/streamlit_app.py   # pages: Overview, Try it, How to use, About, Run and test
+.venv/bin/python -m pytest -q                   # dataset checks + every app page renders
+```
+
 ## References
 
 - Das, A., Duff, J., Hoffmann, J., & Demberg, V. (2026). Planning Ahead with RSA. AAMAS 2026. arXiv:2510.23340.

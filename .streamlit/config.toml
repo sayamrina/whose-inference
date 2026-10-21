@@ -1,0 +1,20 @@
+[theme]
+font = "'Atkinson Hyperlegible Next':https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,300..800;1,300..800&display=swap, sans-serif"
+codeFont = "'Atkinson Hyperlegible Mono':https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@300..700&display=swap, monospace"
+headingFontWeights = [800, 700, 700, 600, 600, 600]
+baseRadius = "small"
+showWidgetBorder = true
+
+[theme.light]
+primaryColor = "#2b3a8c"
+backgroundColor = "#fbfbfd"
+secondaryBackgroundColor = "#eef0f6"
+textColor = "#1f2430"
+linkColor = "#2b3a8c"
+
+[theme.dark]
+primaryColor = "#9fb0ff"
+backgroundColor = "#12141c"
+secondaryBackgroundColor = "#1c2030"
+textColor = "#e6e8ef"
+linkColor = "#9fb0ff"
